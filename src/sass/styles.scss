@@ -1,0 +1,14 @@
+// BOOTSTRAP //
+$icon-font-path: "~/../node_modules/bootstrap-sass/assets/fonts/bootstrap/";
+@import "~/../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+//===================================================================//
+
+// main.scss (styles.scss)
+
+.jumbotron {
+    color: green;
+}
+
+h1 {
+    background-color: pink;
+}
