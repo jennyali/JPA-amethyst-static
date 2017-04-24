@@ -4,29 +4,284 @@
 <head>
     <title>Amethyst</title>
     
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link href="../node_modules/normalize.css" rel="stylesheet" type="text/css">
     <link href="https://file.myfontastic.com/ncjQH3qL3iqtxPyrLNBQDo/icons.css" rel="stylesheet">
+
+    <!-- Main CSS Stylesheet -->
     <link href="styles/styles.css" rel="stylesheet" type="text/css">
     
+    <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
 </head>
         
 <body>
 
-<h1 class="jumbotron">Hello World </h1>
+    <!--  SITE HEADER
+    =========================================================================== -->
+
+    <header class="site-header" role="banner">
+        <div class="navbar-wrapper">
+            <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                    
+                <div class="container">
+                    
+                    <div class="navbar-header">
+                         <!-- creates a burger-menu for small screen, dissappears on big screen -->
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html">
+                            Amethyst
+                            <img style="max-width: 50px; display: inline;" class="img-responsive" src="./images/elephant-drawn.png" alt="Amethyst logo">
+                        </a>
+
+                    </div> <!-- navbar-header -->
+
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="active"><a href="/">Home</a></li>
+                            <li><a href="blog.html">Menu</a></li>
+                            <li><a href="resources.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div><!-- navbar-collapse -->   
+
+                </div><!-- container -->
+            </div><!-- navbar -->
+        </div><!-- navbar-wrapper -->
+
+    </header>
+
+    <!--  HERO CAROUSEL
+    =========================================================================== -->
+
+    <section id="hero">
+
+        <div id="hero-carousel" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <!-- <ol class="carousel-indicators">
+                <li data-target="#hero-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#hero-carousel" data-slide-to="1"></li>
+                <li data-target="#hero-carousel" data-slide-to="2"></li>
+            </ol> -->
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                <img src="./images/elephant-side-view-two.jpg" alt="elephant side view">
+
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="col-sm-4">
+                                <h3>Lorem ipsum dolor sit amet.</h3>
+                                <p>Aliquam molestie est ac justo bibendum, ac varius sem blandit.</p>
+                            </div> <!-- .col -->
+
+                        </div> <!-- .row -->
+                    </div> <!-- .container -->
+                </div>
+
+            </div>
+
+    </section>
 
 
+    <!--  INTRO SECTION
+    =========================================================================== -->
+
+    <section id="intro">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-7 well">
+                    <h3>Pellentesque erat est.</h3>
+                    <p>
+                        Donec convallis sapien non quam bibendum mattis. Mauris id sapien lorem. 
+                        Proin at dignissim ante, sed consectetur quam. Cras scelerisque egestas 
+                        lacus, at facilisis risus imperdiet at. Duis eu sapien enim. Etiam nisl 
+                        quam, ultricies id tristique et, dictum non dolor. Fusce augue nunc, 
+                        malesuada vitae fringilla id, maximus eu massa. Donec cursus quam eu 
+                        accumsan molestie. Interdum et malesuada fames ac ante ipsum primis in 
+                        faucibus. Proin lectus augue, pretium vitae fringilla eu, scelerisque 
+                        et nibh.
+                    </p>
+
+                    <button class="btn btn-primary btn-lg">About Us</button>
+                </div> <!-- .col -->
+
+                <div class="col-sm-5">
+                    <img src="./images/elephant-holding.jpg." class="img-responsive" alt="child holding elephant">
+                </div> <!-- .col -->
+
+            </div> <!-- .row -->
+        </div> <!-- .container -->
+    </section> <!-- #intro -->
 
 
+    <!--  FOOD AD SECTION
+    =========================================================================== -->
 
+    <section id="food-ad">
+        <div class="container-fluid">
+
+            <h2 class="text-center">
+                Nam eleifend non velit venenatis iaculis. </br> 
+                Nullam quis nunc consequat.
+            </h2>
+
+        </div> <!-- .container-fluid -->
+    </section> <!-- #food-ad -->
+
+
+    <!--  SELLING POINTS SECTION
+    =========================================================================== -->
+
+    <section id="selling-pts">
+        <div class="container">
+            <div class="row well">
+
+                <div class="col-sm-4 text-center">
+                    <img style="max-width: 150px" src="./images/elephant-drawn.png" alt="icon">
+                    <h4>Vestibulum augue</h4>
+                    <hr>
+                    <p>
+                        Cras ornare dignissim diam, vulputate tincidunt erat interdum vitae. 
+                        Nunc interdum vehicula justo, ac auctor augue scelerisque id. 
+                    </p>
+                </div> <!-- .col -->
+
+                <div class="col-sm-4 text-center">
+                    <img style="max-width: 150px" src="./images/elephant-drawn.png" alt="icon">
+                    <h4>Aenean sit</h4>
+                    <hr>
+                    <p>
+                         Donec pharetra erat at nunc faucibus gravida. Mauris vel vestibulum augue. 
+                         Sed vel sapien aliquam, auctor erat scelerisque, condimentum lorem.
+                    </p>
+                </div> <!-- .col -->
+
+                <div class="col-sm-4 text-center">
+                    <img style="max-width: 150px" src="./images/elephant-drawn.png" alt="icon">
+                    <h4>Duis dictum</h4>
+                    <hr>
+                    <p>
+                        Mauris dapibus convallis massa in porta. Pellentesque habitant morbi 
+                        tristique senectus et netus et malesuada fames ac turpis egestas.
+                    </p>
+                </div> <!-- .col -->
+
+            </div> <!-- .row .well -->
+        </div> <!-- .container -->
+    </section> <!-- #selling-pts -->
+
+
+    <!--  GALLERY EXCERPT SECTION
+    =========================================================================== -->
+
+    <section id="gallery-excerpt">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-sm-3">
+                    <img src="./images/elephant-top-view.jpg" class="img-responsive" alt="gallery photo">
+                </div> <!-- .col -->
+
+                <div class="col-sm-3">
+                    <img src="./images/elephant-under-view.jpg" class="img-responsive" alt="gallery photo">
+                </div> <!-- .col -->
+
+                <div class="col-sm-3">
+                    <img src="./images/elephant-top-view.jpg" class="img-responsive" alt="gallery photo">
+                </div> <!-- .col -->
+
+                <div class="col-sm-3">
+                    <img src="./images/elephant-under-view.jpg" class="img-responsive" alt="gallery photo">
+                </div> <!-- .col -->
+
+            </div> <!-- .row -->
+        </div>  <!-- .container-fluid -->
+    </section> <!-- #gallery-excerpt -->
+
+
+    <!--  MAP SECTION
+    =========================================================================== -->
+
+    <section id="google-map">
+        <div class="container-fluid">
+
+            <div id="map" class="row">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158857.72810724893!2d-0.24168095260003167!3d51.52877184071027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon!5e0!3m2!1sen!2suk!4v1484738813346" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div><!-- #map -->
+
+        </div>  <!-- .container-fluid -->
+    </section> <!-- #google-map -->
+
+
+    <!--  FOOTER
+    =========================================================================== -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-3">
+                    <a class="navbar-brand" href="index.html">
+                        Amethyst
+                        <img style="max-width: 50px; display: inline;" class="img-responsive" src="./images/elephant-drawn.png" alt="Amethyst logo">
+                    </a>
+
+
+                </div> <!-- .col -->
+
+                <div class="col-sm-3">
+
+                    <h5>Our Menu</h5>
+                    <ul class="list-unstyled">
+                        <li>Morbi feugiat </li>
+                        <li>Morbi feugiat </li>
+                        <li>Morbi feugiat </li>
+                        <li>Morbi feugiat </li>
+                    </ul>
+
+                </div> <!-- .col -->
+
+                <div class="col-sm-6">
+
+                    <h5>Newsletter</h5>
+                    <form class="form-horizontal">
+                        <div class="input-group">
+                            <input class="form-control" type="text">
+                            <div class="input-group-btn">
+                                <button type="submit" class="btn btn-default">Subscribe</button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div> <!-- .col -->
+
+            </div><!-- .row -->
+        </div> <!-- .container -->
+    </footer>
 
 
   <script src="../node_modules/jquery/dist/jquery.js"></script>
   <script src="./scripts/bootstrap.js"></script>
   <script src="../node_modules/lodash/lodash.js"></script>
   <script src="./scripts/main.js" charset="utf-8"></script>
-
+  
 
 </body>
 
