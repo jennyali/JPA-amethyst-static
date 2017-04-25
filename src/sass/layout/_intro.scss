@@ -1,0 +1,17 @@
+
+// Introduction .section
+
+#intro {
+
+    .row {
+        display: flex;
+    }
+
+    .well {
+        padding-right: 60px;
+    }
+
+    .intro-img {
+        @extend %background-img-cover;
+    }
+}
