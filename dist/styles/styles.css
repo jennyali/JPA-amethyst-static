@@ -5731,10 +5731,106 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
-.jumbotron {
-  color: green; }
+/*===========================
 
-h1 {
-  background-color: pink; }
+        GLOBAL VARIABLES
+
+=============================*/
+/* color
+-----------------------*/
+/* font-families
+-----------------------*/
+/* font-size
+-----------------------*/
+/* margin/padding sizing
+-----------------------*/
+/* breakpoints
+-----------------------*/
+/*===========================================
+
+            ELEMENT VARIABLES
+
+==============================================*/
+/*===========================
+
+            MIXINS
+
+=============================*/
+body {
+  padding-top: 50px; }
+
+.navbar-brand {
+  padding: 10px 15px; }
+  .navbar-brand img {
+    max-width: 40px;
+    display: inline;
+    margin: 0 10px; }
+
+#hero-carousel .item {
+  position: relative; }
+
+#hero-carousel .carousel-inner__text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.btn-lg, .btn-group-lg > .btn {
+  padding: 20px 60px;
+  border-radius: 0; }
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+#intro .row {
+  display: -ms-flexbox;
+  display: flex; }
+
+#intro .well {
+  padding-right: 60px; }
+
+#intro h3 {
+  margin: 20px 0;
+  font-size: 36px;
+  letter-spacing: 1px;
+  text-transform: uppercase; }
+
+#intro .intro-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+#food-ad {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  #food-ad h2 {
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase; }
+
+#selling-pts .well {
+  padding: 60px 0; }
+
+.selling-point img {
+  max-width: 100px; }
+
+.selling-point h4 {
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 33px; }
+
+.selling-point hr {
+  border-top: 3px solid black;
+  width: 40px;
+  margin-top: 15px; }
+
+.selling-point p {
+  line-height: 24px; }
 
 /*# sourceMappingURL=styles.css.map */
