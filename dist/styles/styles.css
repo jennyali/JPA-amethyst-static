@@ -5756,11 +5756,46 @@ button.close {
             MIXINS
 
 =============================*/
+/*===========================
+
+       PLACEHOLDERS
+
+=============================*/
+.parallax, #intro .intro-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
 body {
   padding-top: 50px; }
 
+h2 {
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase; }
+
+h3 {
+  margin: 20px 0;
+  font-size: 36px;
+  letter-spacing: 1px;
+  text-transform: uppercase; }
+
+h4 {
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 33px; }
+
+hr.sm-width {
+  border-top: 3px solid black;
+  width: 40px;
+  margin-top: 15px; }
+
+p {
+  line-height: 24px; }
+
 .navbar-brand {
-  padding: 10px 15px; }
+  padding: 10px 15px;
+  padding-left: 0; }
   .navbar-brand img {
     max-width: 40px;
     display: inline;
@@ -5779,10 +5814,7 @@ body {
   border-radius: 0; }
 
 .parallax {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
+  background-attachment: fixed; }
 
 #intro .row {
   display: -ms-flexbox;
@@ -5791,17 +5823,6 @@ body {
 #intro .well {
   padding-right: 60px; }
 
-#intro h3 {
-  margin: 20px 0;
-  font-size: 36px;
-  letter-spacing: 1px;
-  text-transform: uppercase; }
-
-#intro .intro-img {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; }
-
 #food-ad {
   display: -ms-flexbox;
   display: flex;
@@ -5809,28 +5830,21 @@ body {
   justify-content: center;
   -ms-flex-align: center;
   align-items: center; }
-  #food-ad h2 {
-    font-weight: bold;
-    color: white;
-    text-transform: uppercase; }
 
 #selling-pts .well {
-  padding: 60px 0; }
+  padding: 90px 0; }
 
 .selling-point img {
   max-width: 100px; }
 
-.selling-point h4 {
-  text-transform: uppercase;
-  font-weight: bold;
-  line-height: 33px; }
+#gallery-excerpt .col--no-padding {
+  padding: 0; }
 
-.selling-point hr {
-  border-top: 3px solid black;
-  width: 40px;
-  margin-top: 15px; }
+#map {
+  height: 400px; }
 
-.selling-point p {
-  line-height: 24px; }
+.dark-theme {
+  background: #222;
+  color: white; }
 
 /*# sourceMappingURL=styles.css.map */
