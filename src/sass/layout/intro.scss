@@ -1,0 +1,26 @@
+
+// Introduction .section
+
+#intro {
+
+    .row {
+        display: flex;
+    }
+
+    .well {
+        padding-right: 60px;
+    }
+
+    h3 {
+        margin: 20px 0;
+        font-size: 36px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    .intro-img {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}

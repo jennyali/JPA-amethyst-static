@@ -1,0 +1,33 @@
+
+// Selling points section
+
+#selling-pts {
+
+    .well {
+        padding: 60px 0;
+    }
+
+}
+
+.selling-point {
+    img {
+        max-width: 100px;
+    }
+
+    h4 {
+        text-transform: uppercase;
+        font-weight: bold;
+        line-height: 33px;
+    }
+
+    hr {
+        border-top: 3px solid black;
+        width: 40px;
+        margin-top: 15px;
+    }
+
+    p {
+        line-height: 24px;
+    }
+        
+}

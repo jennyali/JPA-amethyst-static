@@ -1,0 +1,15 @@
+
+// Carousel in Hero section of Front-page.
+
+#hero-carousel {
+
+    .item {
+        position: relative;
+    }
+
+    .carousel-inner__text {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
