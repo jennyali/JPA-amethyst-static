@@ -5769,16 +5769,32 @@ button.close {
 body {
   padding-top: 50px; }
 
+h1 {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold; }
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 48px; } }
+
 h2 {
   font-weight: bold;
   color: white;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  padding: 90px 0; }
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 20px;
+      padding: 30px 0; } }
 
 h3 {
   margin: 20px 0;
   font-size: 36px;
   letter-spacing: 1px;
   text-transform: uppercase; }
+  @media (max-width: 768px) {
+    h3 {
+      font-size: 20px; } }
 
 h4 {
   text-transform: uppercase;
@@ -5793,6 +5809,9 @@ hr.sm-width {
 p {
   line-height: 24px; }
 
+p.lead {
+  font-size: 14px; }
+
 .navbar-brand {
   padding: 10px 15px;
   padding-left: 0; }
@@ -5801,27 +5820,71 @@ p {
     display: inline;
     margin: 0 10px; }
 
+.navbar-brand--no-float {
+  float: none; }
+
 #hero-carousel .item {
-  position: relative; }
+  position: relative;
+  max-height: 1000px; }
 
 #hero-carousel .carousel-inner__text {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%); }
+  transform: translateY(-50%);
+  width: 100%; }
 
 .btn-lg, .btn-group-lg > .btn {
   padding: 20px 60px;
   border-radius: 0; }
+  @media (max-width: 768px) {
+    .btn-lg, .btn-group-lg > .btn {
+      padding: 10px 40px; } }
+
+.btn-round {
+  border-radius: 75px; }
+
+.btn-secondary {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 8px 20px;
+  background: grey;
+  color: white; }
+  @media (max-width: 768px) {
+    .btn-secondary {
+      font-weight: normal;
+      letter-spacing: 1px; } }
 
 .parallax {
   background-attachment: fixed; }
+
+@media (max-width: 420px) {
+  .input-group--curved {
+    display: block;
+    text-align: center; } }
+
+.input-group--curved .form-control:first-child {
+  border-radius: 75px; }
+
+.input-group--curved .input-group-btn {
+  padding-left: 5px; }
+
+.input-group--curved .input-group-btn:last-child > .btn {
+  border-radius: 75px; }
+  @media (max-width: 420px) {
+    .input-group--curved .input-group-btn:last-child > .btn {
+      margin-top: 10px; } }
 
 #intro .row {
   display: -ms-flexbox;
   display: flex; }
 
 #intro .well {
-  padding-right: 60px; }
+  text-align: center; }
+  @media (min-width: 768px) {
+    #intro .well {
+      padding-right: 60px;
+      text-align: left; } }
 
 #food-ad {
   display: -ms-flexbox;
@@ -5833,6 +5896,13 @@ p {
 
 #selling-pts .well {
   padding: 90px 0; }
+  @media (max-width: 768px) {
+    #selling-pts .well {
+      padding: 30px 0; } }
+
+@media (max-width: 768px) {
+  .selling-point {
+    margin: 60px 0; } }
 
 .selling-point img {
   max-width: 100px; }
@@ -5841,7 +5911,65 @@ p {
   padding: 0; }
 
 #map {
-  height: 400px; }
+  height: 200px; }
+  @media (min-width: 992px) {
+    #map {
+      height: 400px; } }
+
+footer h5, footer ul {
+  margin: 0px; }
+
+footer h5 {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 15px; }
+  @media (max-width: 768px) {
+    footer h5 {
+      text-align: center; } }
+
+@media (max-width: 768px) {
+  footer li {
+    display: inline; } }
+
+footer.well {
+  border-radius: 0px; }
+  @media (max-width: 768px) {
+    footer.well {
+      padding: 20px 0px; } }
+
+.footer-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse; }
+  @media (min-width: 768px) {
+    .footer-wrapper {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+      flex-direction: row; } }
+
+@media (min-width: 768px) {
+  .footer-column {
+    border-right: 1px solid white; } }
+
+@media (max-width: 768px) {
+  .footer-column:nth-child(2) {
+    text-align: center;
+    padding: 30px 15px; } }
+
+.footer-contact-details {
+  display: -ms-flexbox;
+  display: flex; }
+  .footer-contact-details h6, .footer-contact-details p {
+    margin: 0px;
+    font-size: 12px;
+    line-height: 1.5; }
+  .footer-contact-details h6 {
+    font-weight: bold; }
+  .footer-contact-details p {
+    padding-left: 15px; }
 
 .dark-theme {
   background: #222;

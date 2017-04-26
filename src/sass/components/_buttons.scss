@@ -1,5 +1,29 @@
 
+// Button styling
+
 .btn-lg {
     padding: 20px 60px;
     border-radius: 0;
+
+        @include mediaQ--max($bp-sm) {
+            padding: 10px 40px;
+        }
+}
+
+.btn-round {
+    border-radius: 75px;
+}
+
+.btn-secondary {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 8px 20px;
+    background: grey;
+    color: white;
+
+        @include mediaQ--max($bp-sm) {
+            font-weight: normal;
+            letter-spacing: 1px;
+        }
 }

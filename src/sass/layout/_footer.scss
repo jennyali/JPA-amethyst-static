@@ -1,0 +1,76 @@
+
+// bottom footer
+
+footer {
+
+    h5, ul {
+        margin: 0px;
+    }
+
+    h5 {
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+
+        @include mediaQ--max($bp-sm) {
+            text-align: center;
+        }
+    }
+
+    li {
+        @include mediaQ--max($bp-sm) {
+            display: inline;
+        }
+    }
+
+    &.well {
+        border-radius: 0px; 
+
+        @include mediaQ--max($bp-sm) {
+            padding: 20px 0px;
+        }
+    }
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+
+    @include mediaQ--min($bp-sm) {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.footer-column {
+    @include mediaQ--min($bp-sm) {
+        border-right: 1px solid white;
+    }
+}
+
+.footer-column:nth-child(2) {
+    @include mediaQ--max($bp-sm) {
+        text-align: center;
+        padding: 30px 15px;
+    }
+}
+
+.footer-contact-details {
+    display: flex;
+    
+    h6, p {
+        margin: 0px;
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    h6 {
+        font-weight: bold;
+    }
+
+    p {
+        padding-left: 15px;
+    }
+}
+

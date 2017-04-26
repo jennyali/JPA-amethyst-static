@@ -5,11 +5,13 @@
 
     .item {
         position: relative;
+        max-height: 1000px;
     }
 
     .carousel-inner__text {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
+        width: 100%;
     }
 }
