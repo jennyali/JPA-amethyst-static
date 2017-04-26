@@ -1,0 +1,27 @@
+
+
+// header burder menu
+
+.navbar-toggle .icon-bar-top {
+    transition: all 0.5s;
+}
+
+.navbar-toggle .icon-bar-bottom {
+    transition: all 0.5s;
+}
+
+.navbar-toggle .icon-bar-top--rotate {
+    transform: rotate(-40deg);
+    width: 60%;
+    position: relative;
+    top: 1px;
+    transition: all 0.5s;
+}
+
+.navbar-toggle .icon-bar-bottom--rotate {
+    transform: rotate(40deg);
+    width: 60%;
+    position: relative;
+    top: -1px;
+    transition: all 0.5s;
+}

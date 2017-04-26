@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="../node_modules/normalize.css" rel="stylesheet" type="text/css">
+    <link href="../node_modules/normalize.css" rel="text/html" type="text/css">
     <link href="https://file.myfontastic.com/ncjQH3qL3iqtxPyrLNBQDo/icons.css" rel="stylesheet">
 
     <!-- Main CSS Stylesheet -->
@@ -35,11 +35,11 @@
                     
                     <div class="navbar-header">
                          <!-- creates a burger-menu for small screen, dissappears on big screen -->
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <button type="button" class="navbar-toggle" id="header-burger-menu-btn">
                             <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
+                            <span class="icon-bar icon-bar-top"></span>
+                            <span class="icon-bar icon-bar-mid"></span>
+                            <span class="icon-bar icon-bar-bottom"></span>
                         </button>
                         <a class="navbar-brand" href="index.html">
                             Amethyst
@@ -48,7 +48,7 @@
 
                     </div> <!-- navbar-header -->
 
-                    <div class="navbar-collapse collapse">
+                    <div id="header-dropdown" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav navbar-right">
                             <li class="active"><a href="/">Home</a></li>
                             <li><a href="blog.html">Menu</a></li>
@@ -79,8 +79,36 @@
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                <img src="./images/elephant-side-view-two.jpg" alt="elephant side view">
+                <div class="item active" style="background: mediumpurple;">
+                <img src="./images/elephant-side-view-two-clear.png" alt="elephant side view">
+
+                    <div class="carousel-inner__text container-fluid">
+                        <div class="row">
+
+                            <div class="col-xs-5 col-sm-4 col-sm-offset-1">
+                                <h1>Lorem ipsum dolor sit amet.</h1>
+                            </div> <!-- .col -->
+
+                        </div> <!-- .row -->
+                    </div> <!-- .container -->
+                </div>
+
+                <div class="item" style="background: lightpink;">
+                <img src="./images/elephant-side-view-two-clear.png" alt="elephant side view">
+
+                    <div class="carousel-inner__text container-fluid">
+                        <div class="row">
+
+                            <div class="col-xs-5 col-sm-4 col-sm-offset-1">
+                                <h1>Lorem ipsum dolor sit amet.</h1>
+                            </div> <!-- .col -->
+
+                        </div> <!-- .row -->
+                    </div> <!-- .container -->
+                </div>
+
+                <div class="item" style="background: wheat;">
+                <img src="./images/elephant-side-view-two-clear.png" alt="elephant side view">
 
                     <div class="carousel-inner__text container-fluid">
                         <div class="row">
