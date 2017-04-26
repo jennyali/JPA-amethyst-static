@@ -5,11 +5,20 @@
 
     .well {
         padding: 90px 0;
+
+        @include mediaQ--max($bp-sm) {
+            padding: 30px 0;
+        }
     }
 
 }
 
 .selling-point {
+
+    @include mediaQ--max($bp-sm) {
+        margin: 60px 0;
+    }
+
     img {
         max-width: 100px;
     }       

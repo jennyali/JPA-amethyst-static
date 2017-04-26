@@ -82,12 +82,11 @@
                 <div class="item active">
                 <img src="./images/elephant-side-view-two.jpg" alt="elephant side view">
 
-                    <div class="carousel-inner__text container">
+                    <div class="carousel-inner__text container-fluid">
                         <div class="row">
 
-                            <div class="col-sm-4">
-                                <h3>Lorem ipsum dolor sit amet.</h3>
-                                <p>Aliquam molestie est ac justo bibendum, ac varius sem blandit.</p>
+                            <div class="col-xs-5 col-sm-4 col-sm-offset-1">
+                                <h1>Lorem ipsum dolor sit amet.</h1>
                             </div> <!-- .col -->
 
                         </div> <!-- .row -->
@@ -103,10 +102,10 @@
     =========================================================================== -->
 
     <section id="intro">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
 
-                <div class="col-sm-6 col-sm-offset-1 well">
+                <div class="col-xs-8 col-sm-6 col-sm-offset-1 well">
                     <h3>Pellentesque erat est.</h3>
                     <p class="lead">
                         Donec convallis sapien non quam bibendum mattis. Mauris id sapien lorem. 
@@ -114,7 +113,7 @@
                         lacus, at facilisis risus imperdiet at. Duis eu sapien enim. Etiam nisl 
                         quam, ultricies id tristique et, dictum non dolor. 
                     </p>
-                    <p>     
+                    <p class="hidden-xs">     
                         Fusce augue nunc, 
                         malesuada vitae fringilla id, maximus eu massa. Donec cursus quam eu 
                         accumsan molestie. Interdum et malesuada fames ac ante ipsum primis in 
@@ -127,7 +126,7 @@
                     <button class="btn btn-primary btn-lg">About Us</button>
                 </div> <!-- .col -->
 
-                <div class="col-sm-5 intro-img" style="background-image: url('./images/elephant-holding.jpg');">
+                <div class="col-xs-4 col-sm-5 intro-img" style="background-image: url('./images/elephant-holding.jpg');">
                 </div> <!-- .col -->
 
             </div> <!-- .row -->
@@ -138,7 +137,7 @@
     <!--  FOOD AD SECTION
     =========================================================================== -->
 
-    <section id="food-ad" class="parallax" style="background-image: url('./images/elephant-under-view.jpg'); height: 300px;" data-type="background" data-speed="4">
+    <section id="food-ad" class="parallax" style="background-image: url('./images/elephant-under-view.jpg');" data-type="background" data-speed="4">
         <div class="container-fluid">
 
             <h2 class="text-center">
@@ -211,7 +210,7 @@
                     <img src="./images/elephant-top-view.jpg" class="img-responsive" alt="gallery photo">
                 </div> <!-- .col -->
 
-                <div class="col-sm-3 col--no-padding">
+                <div class="col-sm-3 col--no-padding hidden-xs">
                     <img src="./images/elephant-under-view.jpg" class="img-responsive" alt="gallery photo">
                 </div> <!-- .col -->
 
@@ -237,34 +236,34 @@
     <!--  FOOTER
     =========================================================================== -->
 
-    <footer class="dark-theme">
+    <footer class="dark-theme well">
         <div class="container">
-            <div class="row">
+            <div class="row footer-wrapper">
 
-                <div class="col-sm-3">
-                    <a class="navbar-brand" href="index.html">
+                <div class="col-sm-3 footer-column">
+                    <a class="navbar-brand navbar-brand--no-float" href="index.html">
                         Amethyst
                         <img class="img-responsive" src="./images/elephant-drawn.png" alt="Amethyst logo">
                     </a>
-                    <div>
+                    <div class="footer-contact-details">
                         <h6>Address:</h6>
                         <p>89 Swanpool Street, </br> Penyrn, Cornwall 1HT 5GT</p>
                     </div>
-                    <div>
+                    <div class="footer-contact-details">
                         <h6>Email:</h6>
                         <p>www.amethyst.com</p>
                     </div>
 
                 </div> <!-- .col -->
 
-                <div class="col-sm-3">
+                <div class="col-sm-3 footer-column">
 
                     <h5>Our Menu</h5>
                     <ul class="list-unstyled">
-                        <li>Morbi feugiat </li>
-                        <li>Morbi feugiat </li>
-                        <li>Morbi feugiat </li>
-                        <li>Morbi feugiat </li>
+                        <li><a href="#">Morbi feugiat</a></li>
+                        <li><a href="#">Morbi feugiat</a></li>
+                        <li><a href="#">Morbi feugiat</a></li>
+                        <li><a href="#">Morbi feugiat</a></li>
                     </ul>
 
                 </div> <!-- .col -->
@@ -273,10 +272,10 @@
 
                     <h5>Newsletter</h5>
                     <form class="form-horizontal">
-                        <div class="input-group">
+                        <div class="input-group input-group--curved">
                             <input class="form-control" type="text">
                             <div class="input-group-btn">
-                                <button type="submit" class="btn btn-default">Subscribe</button>
+                                <button type="submit" class="btn btn-default btn-round btn-secondary">Subscribe</button>
                             </div>
                         </div>
                     </form>
