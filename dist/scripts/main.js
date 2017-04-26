@@ -25,4 +25,41 @@ $(document).ready(function() {
         });
     });
 
+// View
+
+// Click burger menu to dropdown menu - sm-screen
+var $headerNavBtn = $('#header-burger-menu-btn');
+var $headerNavDropdown = $('#header-dropdown');
+
+var $burgerMenuTopBar = $('.navbar-toggle .icon-bar-top');
+var $burgerMenuBottomBar =$('.navbar-toggle .icon-bar-bottom');
+
+
+// Click burger menu to dropdown menu - sm-screen
+$headerNavBtn.on({
+    'click' : function() {
+        headerNavbarHandler(this);
+        burgerMenuRotateBars(this);
+    },
+
+    'blur' : function() {
+        headerNavbarHandler(this);
+        burgerMenuRotateBars(this);
+    }
+});
+
+// Controller
+
+function headerNavbarHandler(selector) {
+    //console.log('btn clicked');
+
+    $headerNavDropdown.toggleClass('navbar-collapse--appear');
+}
+
+function burgerMenuRotateBars(selector) {
+
+    $burgerMenuTopBar.toggleClass('icon-bar-top--rotate');
+    $burgerMenuBottomBar.toggleClass('icon-bar-bottom--rotate');
+}
+
 });

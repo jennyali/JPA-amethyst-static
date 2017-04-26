@@ -5823,8 +5823,26 @@ p.lead {
 .navbar-brand--no-float {
   float: none; }
 
+.navbar-collapse {
+  left: 0px;
+  transition: left 0.5s; }
+  @media (max-width: 768px) {
+    .navbar-collapse {
+      width: 300px;
+      position: absolute;
+      background: #222;
+      display: block;
+      margin: 0px;
+      left: -300px; } }
+
+@media (max-width: 768px) {
+  .container > .navbar-collapse {
+    margin: 0px; } }
+
+.navbar-collapse--appear {
+  left: 0px; }
+
 #hero-carousel .item {
-  position: relative;
   max-height: 1000px; }
 
 #hero-carousel .carousel-inner__text {
@@ -5874,6 +5892,26 @@ p.lead {
   @media (max-width: 420px) {
     .input-group--curved .input-group-btn:last-child > .btn {
       margin-top: 10px; } }
+
+.navbar-toggle .icon-bar-top {
+  transition: all 0.5s; }
+
+.navbar-toggle .icon-bar-bottom {
+  transition: all 0.5s; }
+
+.navbar-toggle .icon-bar-top--rotate {
+  transform: rotate(-40deg);
+  width: 60%;
+  position: relative;
+  top: 1px;
+  transition: all 0.5s; }
+
+.navbar-toggle .icon-bar-bottom--rotate {
+  transform: rotate(40deg);
+  width: 60%;
+  position: relative;
+  top: -1px;
+  transition: all 0.5s; }
 
 #intro .row {
   display: -ms-flexbox;

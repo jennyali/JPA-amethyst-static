@@ -17,3 +17,27 @@
     float: none;
 }
 
+.navbar-collapse {
+    left: 0px;
+    transition: left 0.5s;
+
+    @include mediaQ--max($bp-sm) {
+        width: 300px;
+        position: absolute;
+        background: #222;
+        display: block;
+        margin: 0px;
+        left: -300px;
+    }
+}
+
+.container > .navbar-collapse {
+    @include mediaQ--max($bp-sm) {
+        margin: 0px;
+    }
+}
+
+.navbar-collapse--appear {
+    left: 0px;
+}
+
