@@ -68,7 +68,7 @@
 
     <section id="hero">
 
-        <div id="hero-carousel" class="carousel slide" data-ride="carousel">
+        <div id="hero-carousel" class="carousel slide carousel-fade" data-ride="carousel">
 
             <!-- Indicators -->
             <!-- <ol class="carousel-indicators">
@@ -85,7 +85,7 @@
                     <div class="carousel-inner__text container-fluid">
                         <div class="row">
 
-                            <div class="col-xs-5 col-sm-4 col-sm-offset-1">
+                            <div class="col-xs-5 col-md-4 col-md-offset-1">
                                 <h1>Lorem ipsum dolor sit amet.</h1>
                             </div> <!-- .col -->
 
@@ -99,8 +99,8 @@
                     <div class="carousel-inner__text container-fluid">
                         <div class="row">
 
-                            <div class="col-xs-5 col-sm-4 col-sm-offset-1">
-                                <h1>Lorem ipsum dolor sit amet.</h1>
+                            <div class="col-xs-5 col-md-4 col-md-offset-1">
+                                <h1>Curabitur bibendum et justo vel.</h1>
                             </div> <!-- .col -->
 
                         </div> <!-- .row -->
@@ -113,8 +113,8 @@
                     <div class="carousel-inner__text container-fluid">
                         <div class="row">
 
-                            <div class="col-xs-5 col-sm-4 col-sm-offset-1">
-                                <h1>Lorem ipsum dolor sit amet.</h1>
+                            <div class="col-xs-5 col-md-4 col-md-offset-1">
+                                <h1>Suspendisse potenti. Nullam ut lorem.</h1>
                             </div> <!-- .col -->
 
                         </div> <!-- .row -->
@@ -129,11 +129,11 @@
     <!--  INTRO SECTION
     =========================================================================== -->
 
-    <section id="intro">
+    <section id="intro" data-scroll="in-view-animation">
         <div class="container-fluid">
             <div class="row">
 
-                <div class="col-xs-8 col-sm-6 col-sm-offset-1 well">
+                <div class="col-sm-7 col-md-6 col-md-offset-1 col-md-5 col-md-offset-2 well">
                     <h3>Pellentesque erat est.</h3>
                     <p class="lead">
                         Donec convallis sapien non quam bibendum mattis. Mauris id sapien lorem. 
@@ -141,7 +141,7 @@
                         lacus, at facilisis risus imperdiet at. Duis eu sapien enim. Etiam nisl 
                         quam, ultricies id tristique et, dictum non dolor. 
                     </p>
-                    <p class="hidden-xs">     
+                    <p>     
                         Fusce augue nunc, 
                         malesuada vitae fringilla id, maximus eu massa. Donec cursus quam eu 
                         accumsan molestie. Interdum et malesuada fames ac ante ipsum primis in 
@@ -151,10 +151,10 @@
                     
                     <hr>
 
-                    <button class="btn btn-primary btn-lg">About Us</button>
+                    <button class="btn btn-primary btn-lg">read more</button>
                 </div> <!-- .col -->
 
-                <div class="col-xs-4 col-sm-5 intro-img" style="background-image: url('./images/elephant-holding.jpg');">
+                <div class=" col-sm-5 intro-img hidden-xs" style="background-image: url('./images/elephant-holding.jpg');">
                 </div> <!-- .col -->
 
             </div> <!-- .row -->
@@ -165,7 +165,7 @@
     <!--  FOOD AD SECTION
     =========================================================================== -->
 
-    <section id="food-ad" class="parallax" style="background-image: url('./images/elephant-under-view.jpg');" data-type="background" data-speed="4">
+    <section id="food-ad" data-scroll="in-view-animation" class="parallax" style="background-image: url('./images/elephant-under-view.jpg');" data-type="background" data-speed="4">
         <div class="container-fluid">
 
             <h2 class="text-center">
@@ -180,7 +180,7 @@
     <!--  SELLING POINTS SECTION
     =========================================================================== -->
 
-    <section id="selling-pts">
+    <section id="selling-pts" data-scroll="in-view-animation">
         <div class="container">
             <div class="row well">
 
@@ -226,19 +226,19 @@
         <div class="container-fluid">
             <div class="row">
 
-                <div class="col-sm-3 col--no-padding">
+                <div class="col-sm-3 col--no-padding gallery-excerpt__thumbnail">
                     <img src="./images/elephant-top-view.jpg" class="img-responsive" alt="gallery photo">
                 </div> <!-- .col -->
 
-                <div class="col-sm-3 col--no-padding">
+                <div class="col-sm-3 col--no-padding gallery-excerpt__thumbnail">
                     <img src="./images/elephant-under-view.jpg" class="img-responsive" alt="gallery photo">
                 </div> <!-- .col -->
 
-                <div class="col-sm-3 col--no-padding">
+                <div class="col-sm-3 col--no-padding gallery-excerpt__thumbnail">
                     <img src="./images/elephant-top-view.jpg" class="img-responsive" alt="gallery photo">
                 </div> <!-- .col -->
 
-                <div class="col-sm-3 col--no-padding hidden-xs">
+                <div class="col-sm-3 col--no-padding hidden-xs gallery-excerpt__thumbnail">
                     <img src="./images/elephant-under-view.jpg" class="img-responsive" alt="gallery photo">
                 </div> <!-- .col -->
 
@@ -259,6 +259,35 @@
 
         </div>  <!-- .container-fluid -->
     </section> <!-- #google-map -->
+
+    <!--  MODAL
+    =========================================================================== -->
+
+    <div class="excerpt-gallery-modal" id="excerpt-gallery-modal">
+        <div class="modal__cancel-btn row">
+            <div class="col-md-12">
+                <button class="icon-delete-1"></button>
+            </div>
+        </div>
+
+        <div class="modal__content row">
+            <div class="modal__content__prev-btn col-sm-3">
+                <button class="icon-arrow-67"></button>
+            </div>
+
+            <div class="modal__content__img col-sm-6 text-center">
+                <figure>
+                    <img src="./images/elephant-side-view.jpg" class="img-responsive">
+                
+                    <figcaption>'name'</figcaption>
+                </figure>
+            </div>
+
+            <div class="modal__content__next-btn col-sm-3">
+                <button class="icon-arrow-68"></button>
+            </div>
+        </div>
+    </div>
 
 
     <!--  FOOTER

@@ -1,0 +1,84 @@
+
+// EXCERPT GALLERY MODAL - (CURR. FRONT-PAGE)
+
+.excerpt-gallery-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(#222, 0.9);
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+.modal__cancel-btn {
+    text-align: right;
+    padding: $mp-triple;
+    padding-bottom: 0;
+
+    button {
+        height: 50px;
+        background: none;
+        border: none;
+        color: $light;
+        font-size: $font-size-xlg;
+    }
+}
+
+.modal__content {
+    display: flex;
+    height: 100%;
+}
+
+.modal__content__prev-btn,
+.modal__content__next-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+        
+    button {
+        height: 50px;
+        background: none;
+        border: none;
+        color: $light;
+        font-size: $font-size-xxlg;
+    }
+}
+
+.modal__content__next-btn {
+    text-align: left;
+}
+
+.modal__content__prev-btn {
+    text-align: right;
+}
+
+.modal__content__img {
+
+    figure {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    img {
+        max-height: 500px;
+        max-width: 80%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    figcaption {
+        margin: 0 30px;
+        color: $light;
+    }
+}
+
+.gallery-show {
+    display: flex;
+}

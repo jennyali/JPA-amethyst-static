@@ -5770,7 +5770,7 @@ body {
   padding-top: 50px; }
 
 h1 {
-  font-size: 18px;
+  font-size: 20px;
   text-transform: uppercase;
   font-weight: bold; }
   @media (min-width: 768px) {
@@ -5788,13 +5788,13 @@ h2 {
       padding: 30px 0; } }
 
 h3 {
-  margin: 20px 0;
+  margin: 80px 0 30px;
   font-size: 36px;
   letter-spacing: 1px;
   text-transform: uppercase; }
   @media (max-width: 768px) {
     h3 {
-      font-size: 20px; } }
+      font-size: 24px; } }
 
 h4 {
   text-transform: uppercase;
@@ -5807,10 +5807,19 @@ hr.sm-width {
   margin-top: 15px; }
 
 p {
-  line-height: 24px; }
+  line-height: 24px;
+  font-size: 14px; }
+  @media (min-width: 992px) {
+    p {
+      font-size: 16px; } }
 
 p.lead {
-  font-size: 14px; }
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 1.5; }
+  @media (min-width: 992px) {
+    p.lead {
+      font-size: 18px; } }
 
 .navbar-brand {
   padding: 10px 15px;
@@ -5843,7 +5852,7 @@ p.lead {
   left: 0px; }
 
 #hero-carousel .item {
-  max-height: 1000px; }
+  max-height: 900px; }
 
 #hero-carousel .carousel-inner__text {
   position: absolute;
@@ -5851,8 +5860,31 @@ p.lead {
   transform: translateY(-50%);
   width: 100%; }
 
+.carousel-fade .carousel-inner .item {
+  transition-property: opacity; }
+
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0; }
+
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1; }
+
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  transform: translate3d(0, 0, 0); }
+
+.carousel-fade .carousel-control {
+  z-index: 2; }
+
 .btn-lg, .btn-group-lg > .btn {
-  padding: 20px 60px;
+  padding: 15px 40px;
   border-radius: 0; }
   @media (max-width: 768px) {
     .btn-lg, .btn-group-lg > .btn {
@@ -5913,16 +5945,93 @@ p.lead {
   top: -1px;
   transition: all 0.5s; }
 
-#intro .row {
+.excerpt-gallery-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(34, 34, 34, 0.9);
+  z-index: 9999;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: none; }
+
+.modal__cancel-btn {
+  text-align: right;
+  padding: 60px;
+  padding-bottom: 0; }
+  .modal__cancel-btn button {
+    height: 50px;
+    background: none;
+    border: none;
+    color: #FFFFFF;
+    font-size: 24px; }
+
+.modal__content {
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%; }
+
+.modal__content__prev-btn,
+.modal__content__next-btn {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .modal__content__prev-btn button,
+  .modal__content__next-btn button {
+    height: 50px;
+    background: none;
+    border: none;
+    color: #FFFFFF;
+    font-size: 32px; }
+
+.modal__content__next-btn {
+  text-align: left; }
+
+.modal__content__prev-btn {
+  text-align: right; }
+
+.modal__content__img figure {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.modal__content__img img {
+  max-height: 500px;
+  max-width: 80%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%); }
+
+.modal__content__img figcaption {
+  margin: 0 30px;
+  color: #FFFFFF; }
+
+.gallery-show {
   display: -ms-flexbox;
   display: flex; }
 
-#intro .well {
-  text-align: center; }
+#intro {
+  overflow: hidden; }
+  #intro .row {
+    display: -ms-flexbox;
+    display: flex; }
   @media (min-width: 768px) {
     #intro .well {
-      padding-right: 60px;
-      text-align: left; } }
+      padding-right: 60px; } }
+  #intro .well h3, #intro .well p.lead, #intro .well p, #intro .well button {
+    position: relative;
+    top: 15px;
+    opacity: 0; }
+  #intro .intro-img {
+    left: 120px;
+    opacity: 0; }
 
 #food-ad {
   display: -ms-flexbox;
@@ -5931,6 +6040,10 @@ p.lead {
   justify-content: center;
   -ms-flex-align: center;
   align-items: center; }
+  #food-ad h2 {
+    position: relative;
+    right: 100px;
+    opacity: 0; }
 
 #selling-pts .well {
   padding: 90px 0; }
@@ -5938,12 +6051,39 @@ p.lead {
     #selling-pts .well {
       padding: 30px 0; } }
 
-@media (max-width: 768px) {
-  .selling-point {
-    margin: 60px 0; } }
-
-.selling-point img {
-  max-width: 100px; }
+.selling-point {
+  position: relative;
+  top: 60px;
+  opacity: 0; }
+  @media (max-width: 768px) {
+    .selling-point {
+      margin: 60px 0; } }
+  .selling-point img {
+    max-width: 100px; }
+  .selling-point img {
+    position: relative;
+    top: 0px;
+    transition: all 0.5s; }
+  .selling-point h4 {
+    position: relative;
+    top: 0px;
+    transition: all 0.5s; }
+  .selling-point hr {
+    position: relative;
+    width: 40px;
+    transition: all 0.5s; }
+  .selling-point p {
+    position: relative;
+    top: 0px;
+    transition: all 0.5s; }
+  .selling-point:hover img {
+    top: -30px; }
+  .selling-point:hover h4 {
+    top: -20px; }
+  .selling-point:hover hr {
+    width: 150px; }
+  .selling-point:hover p {
+    top: 20px; }
 
 #gallery-excerpt .col--no-padding {
   padding: 0; }
@@ -6008,6 +6148,41 @@ footer.well {
     font-weight: bold; }
   .footer-contact-details p {
     padding-left: 15px; }
+
+#intro.in-view h3 {
+  opacity: 1;
+  top: 0;
+  transition: all 0.5s 0.4s; }
+
+#intro.in-view p.lead {
+  opacity: 1;
+  top: 0;
+  transition: all 0.5s 0.5s; }
+
+#intro.in-view p {
+  opacity: 1;
+  top: 0;
+  transition: all 0.5s 0.6s; }
+
+#intro.in-view button {
+  opacity: 1;
+  top: 0;
+  transition: all 0.5s 0.7s; }
+
+#intro.in-view .intro-img {
+  opacity: 1;
+  left: 0px;
+  transition: all 0.5s 0.3s; }
+
+#food-ad.in-view h2 {
+  right: 0px;
+  opacity: 1;
+  transition: all 0.5s 0.5s; }
+
+#selling-pts.in-view .selling-point {
+  opacity: 1;
+  top: 0;
+  transition: all 0.5s 0.5s; }
 
 .dark-theme {
   background: #222;

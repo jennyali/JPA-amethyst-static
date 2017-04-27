@@ -2,21 +2,32 @@
 // Introduction .section
 
 #intro {
+    overflow: hidden;
 
     .row {
         display: flex;
     }
 
     .well {
-        text-align: center;
-
+        
         @include mediaQ--min($bp-sm) {
             padding-right: 60px;
-            text-align: left;
+
         }
+
+        // Animation BEFORE styles
+        h3, p.lead, p, button {
+            position: relative;
+            top: 15px;
+            opacity: 0;
+        }
+
     }
 
     .intro-img {
         @extend %background-img-cover;
+
+        left: 120px;
+        opacity: 0;
     }
 }
