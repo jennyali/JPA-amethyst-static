@@ -5,4 +5,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+        h2 {
+            position: relative;
+            right: 100px;
+            opacity: 0;
+    }
 }
