@@ -1,11 +1,27 @@
 
 // Carousel in Hero section of Front-page.
 
-#hero-carousel {
+#hero-index-carousel {
 
     .item {
         //position: relative;
         max-height: 900px;
+    }
+
+    .carousel-inner__text {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+    }
+}
+
+// MENU TOP PAGE CAROUSEL.
+
+#hero-menu-carousel {
+
+    .item {
+        max-height: 300px;
     }
 
     .carousel-inner__text {
