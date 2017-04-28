@@ -33,44 +33,8 @@ footer {
     }
 }
 
-.footer-wrapper {
-    display: flex;
-    flex-direction: column-reverse;
 
-    @include mediaQ--min($bp-sm) {
-        display: flex;
-        flex-direction: row;
-    }
-}
 
-.footer-column {
-    @include mediaQ--min($bp-sm) {
-        border-right: 1px solid white;
-    }
-}
 
-.footer-column:nth-child(2) {
-    @include mediaQ--max($bp-sm) {
-        text-align: center;
-        padding: 30px 15px;
-    }
-}
 
-.footer-contact-details {
-    display: flex;
-    
-    h6, p {
-        margin: 0px;
-        font-size: 12px;
-        line-height: 1.5;
-    }
-
-    h6 {
-        font-weight: bold;
-    }
-
-    p {
-        padding-left: 15px;
-    }
-}
 

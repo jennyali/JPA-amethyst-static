@@ -2,8 +2,8 @@
 #map {
     height: 200px;
 
-    @include mediaQ--min($bp-md) {
-        height: 400px;
+    @include mediaQ--min($bp-sm) {
+        height: 375px;
     }
     
 }

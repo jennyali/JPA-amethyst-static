@@ -50,8 +50,8 @@
 
                     <div id="header-dropdown" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav navbar-right">
-                            <li class="active"><a href="/">Home</a></li>
-                            <li><a href="blog.html">Menu</a></li>
+                            <li class="active"><a href="index.html">Home</a></li>
+                            <li><a href="menu.html">Menu</a></li>
                             <li><a href="resources.html">About</a></li>
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
@@ -68,14 +68,7 @@
 
     <section id="hero">
 
-        <div id="hero-carousel" class="carousel slide carousel-fade" data-ride="carousel">
-
-            <!-- Indicators -->
-            <!-- <ol class="carousel-indicators">
-                <li data-target="#hero-carousel" data-slide-to="0" class="active"></li>
-                <li data-target="#hero-carousel" data-slide-to="1"></li>
-                <li data-target="#hero-carousel" data-slide-to="2"></li>
-            </ol> -->
+        <div id="hero-index-carousel" class="carousel slide carousel-fade" data-ride="carousel">
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
@@ -91,7 +84,7 @@
 
                         </div> <!-- .row -->
                     </div> <!-- .container -->
-                </div>
+                </div><!-- .item -->
 
                 <div class="item" style="background: lightpink;">
                 <img src="./images/elephant-side-view-two-clear.png" alt="elephant side view">
@@ -105,7 +98,7 @@
 
                         </div> <!-- .row -->
                     </div> <!-- .container -->
-                </div>
+                </div><!-- .item -->
 
                 <div class="item" style="background: wheat;">
                 <img src="./images/elephant-side-view-two-clear.png" alt="elephant side view">
@@ -119,11 +112,11 @@
 
                         </div> <!-- .row -->
                     </div> <!-- .container -->
-                </div>
+                </div><!-- .item -->
 
-            </div>
-
-    </section>
+            </div><!-- .carousel-inner -->
+        </div><!-- #hero-carousel -->
+    </section><!-- #hero -->
 
 
     <!--  INTRO SECTION
@@ -222,7 +215,7 @@
     <!--  GALLERY EXCERPT SECTION
     =========================================================================== -->
 
-    <section id="gallery-excerpt">
+    <section id="gallery-excerpt" data-scroll="in-view-animation">
         <div class="container-fluid">
             <div class="row">
 
@@ -252,11 +245,37 @@
 
     <section id="google-map">
         <div class="container-fluid">
+            <div class="row">
 
-            <div id="map" class="row">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158857.72810724893!2d-0.24168095260003167!3d51.52877184071027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon!5e0!3m2!1sen!2suk!4v1484738813346" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div><!-- #map -->
+                <div class="hidden-xs col-sm-4 col-md-4 col-md-offset-2 well">
+                    <h3>Our Address</h3>
+                    <p>89 Swanpool Street, </br> Penyrn, Cornwall 1HT 5GT</p>
 
+                    <h6>Email:</h6>
+                    <p>www.amethyst.com</p>
+
+                    <h6>Telephone:</h6>
+                    <p class="lead">01234 567890</p>
+
+                </div>
+
+                <div id="map" class="col-sm-8 col-md-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158857.72810724893!2d-0.24168095260003167!3d51.52877184071027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon!5e0!3m2!1sen!2suk!4v1484738813346" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div><!-- #map -->
+
+                <div class="visible-xs col-xs-12">
+                    <h3>Our Address</h3>
+                    <p>89 Swanpool Street, </br> Penyrn, Cornwall 1HT 5GT</p>
+
+                    <h6>Email:</h6>
+                    <p>www.amethyst.com</p>
+
+                    <h6>Telephone:</h6>
+                    <p class="lead">01234 567890</p>
+
+                </div>
+
+            </div><!-- .row -->
         </div>  <!-- .container-fluid -->
     </section> <!-- #google-map -->
 
@@ -264,11 +283,12 @@
     =========================================================================== -->
 
     <div class="excerpt-gallery-modal" id="excerpt-gallery-modal">
+
         <div class="modal__cancel-btn row">
             <div class="col-md-12">
                 <button class="icon-delete-1"></button>
             </div>
-        </div>
+        </div><!-- .modal__cancel-btn -->
 
         <div class="modal__content row">
             <div class="modal__content__prev-btn col-sm-3">
@@ -286,48 +306,20 @@
             <div class="modal__content__next-btn col-sm-3">
                 <button class="icon-arrow-68"></button>
             </div>
-        </div>
-    </div>
+        </div><!-- .modal__content -->
+
+    </div><!-- #excerpt-gallery-modal -->
 
 
     <!--  FOOTER
     =========================================================================== -->
-
     <footer class="dark-theme well">
         <div class="container">
-            <div class="row footer-wrapper">
 
-                <div class="col-sm-3 footer-column">
-                    <a class="navbar-brand navbar-brand--no-float" href="index.html">
-                        Amethyst
-                        <img class="img-responsive" src="./images/elephant-drawn.png" alt="Amethyst logo">
-                    </a>
-                    <div class="footer-contact-details">
-                        <h6>Address:</h6>
-                        <p>89 Swanpool Street, </br> Penyrn, Cornwall 1HT 5GT</p>
-                    </div>
-                    <div class="footer-contact-details">
-                        <h6>Email:</h6>
-                        <p>www.amethyst.com</p>
-                    </div>
+            <div class="row">
+                <div class="col-sm-4">
 
-                </div> <!-- .col -->
-
-                <div class="col-sm-3 footer-column">
-
-                    <h5>Our Menu</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Morbi feugiat</a></li>
-                        <li><a href="#">Morbi feugiat</a></li>
-                        <li><a href="#">Morbi feugiat</a></li>
-                        <li><a href="#">Morbi feugiat</a></li>
-                    </ul>
-
-                </div> <!-- .col -->
-
-                <div class="col-sm-6">
-
-                    <h5>Newsletter</h5>
+                    <h5>Sign up</h5>
                     <form class="form-horizontal">
                         <div class="input-group input-group--curved">
                             <input class="form-control" type="text">
@@ -337,12 +329,50 @@
                         </div>
                     </form>
 
-                </div> <!-- .col -->
+                </div><!-- .col -->
+                <div class="col-sm-4 col-sm-offset-4">
+
+                    <h5>Follow Us</h5>
+                    <ul class="list-unstyled list-inline">
+                        <li><span class="icon-twitter"></span></li>
+                        <li><span class="icon-facebook"></span></li>
+                        <li><span class="icon-google-plus"></span></li>
+                    </ul>
+
+                </div><!-- .col -->
 
             </div><!-- .row -->
-        </div> <!-- .container -->
-    </footer>
 
+            <div class="row">
+                <div class="col-sm-12">
+
+                    <ul class="list-unstyled list-inline">
+                        <li><a href="index.html">Untitled</a></li>
+                        <span>/</span>
+                        <li><a href="index.html">Untitled</a></li>
+                        <span>/</span>
+                        <li><a href="index.html">Untitled</a></li>
+                        <span>/</span>
+                        <li><a href="index.html">Untitled</a></li>
+                        <span>/</span>
+                        <li><a href="index.html">Untitled</a></li>
+                        <span>/</span>
+                        <li><a href="index.html">Untitled</a></li>
+                    </ul>
+
+                </div><!-- .col -->
+            </div><!-- .row -->
+
+            <div class="row">
+                <div class="col-sm-12">
+
+                    <p>Copyright Jen Ali 2017</p>
+
+                </div><!-- .col -->
+            </div><!-- .row -->
+
+        </div><!-- .container -->
+    </footer>
 
   <script src="../node_modules/jquery/dist/jquery.js"></script>
   <script src="./scripts/bootstrap.js"></script>
