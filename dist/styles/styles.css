@@ -5861,7 +5861,7 @@ p.lead {
   width: 100%; }
 
 #hero-menu-carousel .item {
-  max-height: 300px; }
+  max-height: 400px; }
 
 #hero-menu-carousel .carousel-inner__text {
   position: absolute;
@@ -6192,6 +6192,23 @@ footer.well {
 
 .menu-aside__img {
   height: 500px; }
+
+#menu-categories ul {
+  padding: 15px 0; }
+
+#menu-categories li {
+  padding: 5px 30px;
+  margin-bottom: 5px;
+  border: 3px solid #222;
+  text-transform: uppercase;
+  font-weight: bold; }
+
+.featured-food-item {
+  padding: 10px;
+  border: 1px dotted #222; }
+
+#menu-content hr {
+  border-top: 3px solid #222; }
 
 .dark-theme {
   background: #222;
