@@ -6097,11 +6097,6 @@ p.lead {
 #gallery-excerpt .col--no-padding {
   padding: 0; }
 
-.gallery-excerpt__thumbnail {
-  position: relative;
-  right: 100px;
-  transform: scale(0.8); }
-
 #map {
   height: 200px; }
   @media (min-width: 768px) {
@@ -6210,8 +6205,25 @@ footer.well {
 #menu-content hr {
   border-top: 3px solid #222; }
 
+#hero-contact div {
+  height: 400px;
+  padding: 0; }
+  #hero-contact div::after {
+    width: 100%;
+    height: 400px;
+    background: rgba(0, 0, 0, 0.3); }
+
+#testimonials {
+  height: 300px;
+  padding: 0; }
+  #testimonials::after {
+    width: 100%;
+    height: 300px;
+    background: rgba(0, 0, 0, 0.5); }
+
 .dark-theme {
   background: #222;
-  color: white; }
+  color: white;
+  border: 1px solid transparent; }
 
 /*# sourceMappingURL=styles.css.map */
