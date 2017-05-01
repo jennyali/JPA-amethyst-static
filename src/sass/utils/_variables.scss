@@ -8,12 +8,12 @@
 -----------------------*/
 
 $colors : (
-    primary: #3D2021,
-    primary-dark: darken(#3D2021, 10%),
+    primary: #6C2487,
+    primary-dark: darken(#6C2487, 10%),
     secondary: #EDDBC4,
     secondary-dark: #B28C5B,
     light: #FFFFFF,
-    dark: #000000,
+    dark: #222,
 );
 
 $primary-color: map-get($map: $colors, $key: primary);
