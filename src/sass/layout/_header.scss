@@ -1,0 +1,22 @@
+
+#site-logo {
+    background: $light;
+    text-align: center;
+    padding: 15px 0;
+
+
+    img {
+        width: 120px;
+        margin: auto;
+        display: inline;
+    }
+
+    p {
+        display: inline-block;
+        color: $primary-color;
+        font-size: 48px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+}
