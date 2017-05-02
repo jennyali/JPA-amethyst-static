@@ -2,21 +2,55 @@
 // Selling points section
 
 #selling-pts {
-
-    .well {
-        padding: 90px 0;
+    padding: 60px 0 90px;
 
         @include mediaQ--max($bp-sm) {
             padding: 30px 0;
         }
+}
+
+.line-break {
+    display: flex;
+    align-items: center;
+
+    span.icon-circle {
+        position: relative;
+        left: -5px;
+        top: 2px;
     }
 
+    span.icon-circle:first-child {
+        left: 0px;
+        right: -5px;
+    }
+        
+    hr {
+        width: 100%;
+        margin: 0;
+        border-top: 2px solid $light;
+    }
+}
+
+.line-break-wrapper {
+    margin-bottom: 60px;
+}
+
+.line-break-text {
+    text-align: center;
+    position: relative;
+    top: 40px;     
+
+        h3 {
+            text-align: center;
+            margin: 0;
+            display: inline-block;
+            background: $primary-color;
+            padding: 10px;
+    }   
 }
 
 .selling-point {
     position: relative;
-    top: 60px;
-    opacity: 0;
 
     @include mediaQ--max($bp-sm) {
         margin: 60px 0;

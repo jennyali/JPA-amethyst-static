@@ -28,16 +28,15 @@
     =========================================================================== -->
 
     <header class="site-header" role="banner">
-        <div class="">
-            <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 
-                <div id="site-logo" class="container-fluid">
-                        <a href="index.html">
-                            <img class="img-responsive" src="./images/elephant-drawn.png" alt="Amethyst logo">
-                        </a>
-                        <p>Amethyst</p>
-                </div>
-                    
+            <div id="site-logo" class="container-fluid">
+                <a href="index.html">
+                    <img class="img-responsive" src="./images/elephant-drawn.png" alt="Amethyst logo">
+                </a>
+                <p>Amethyst</p>
+            </div><!-- #site-logo -->
+
+            <div class="navbar navbar-inverse" role="navigation" data-spy="affix" data-offset-top="197">                
                 <div class="navbar-wrapper">
                     
                     <div class="navbar-header">
@@ -48,7 +47,6 @@
                             <span class="icon-bar icon-bar-mid"></span>
                             <span class="icon-bar icon-bar-bottom"></span>
                         </button>
-
 
                     </div> <!-- navbar-header -->
 
@@ -62,9 +60,8 @@
                         </ul>
                     </div><!-- navbar-collapse -->   
 
-                </div><!-- container -->
+                </div><!-- navbar-wrapper -->
             </div><!-- navbar -->
-        </div><!-- navbar-wrapper -->
 
     </header>
 
@@ -123,64 +120,67 @@
         </div><!-- #hero-carousel -->
     </section><!-- #hero -->
 
-
-    <!--  INTRO SECTION
+        <!-- SELLING POINTS SECTION
     =========================================================================== -->
 
     <section id="intro" data-scroll="in-view-animation">
         <div class="container-fluid">
             <div class="row">
 
-                <div class="col-sm-7 col-md-6 col-md-offset-1 col-md-5 col-md-offset-2 well">
+                <div class="col-sm-6 col-md-6 well text-center">
                     <h3>Pellentesque erat est.</h3>
                     <p class="lead">
                         Donec convallis sapien non quam bibendum mattis. Mauris id sapien lorem. 
                         Proin at dignissim ante, sed consectetur quam. Cras scelerisque egestas 
-                        lacus, at facilisis risus imperdiet at. Duis eu sapien enim. Etiam nisl 
-                        quam, ultricies id tristique et, dictum non dolor. 
+                        lacus, at facilisis risus imperdiet at. 
                     </p>
-                    <p>     
-                        Fusce augue nunc, 
-                        malesuada vitae fringilla id, maximus eu massa. Donec cursus quam eu 
-                        accumsan molestie. Interdum et malesuada fames ac ante ipsum primis in 
-                        faucibus. Proin lectus augue, pretium vitae fringilla eu, scelerisque 
-                        et nibh.
-                    </p>
-                    
-                    <hr>
 
-                    <button class="btn btn-primary btn-lg">read more</button>
                 </div> <!-- .col -->
 
-                <div class=" col-sm-5 intro-img hidden-xs" style="background-image: url('./images/elephant-holding.jpg');">
+                <div class=" col-sm-6 col-md-6 intro-img hidden-xs" style="background-image: url('./images/elephant-top-view.jpg');">
                 </div> <!-- .col -->
 
             </div> <!-- .row -->
+
+            <div class="row">
+
+                <div class=" col-sm-6 col-md-6 intro-img hidden-xs" style="background-image: url('./images/elephant-under-view.jpg');">
+                </div> <!-- .col -->
+
+                <div class="col-sm-6 col-md-6 well text-center dark-theme">
+                    <h3>Pellentesque erat est.</h3>
+                    <p class="lead">
+                        Donec convallis sapien non quam bibendum mattis. Mauris id sapien lorem. 
+                        Proin at dignissim ante, sed consectetur quam. Cras scelerisque egestas 
+                        lacus, at facilisis risus imperdiet at. 
+                    </p>
+
+                </div> <!-- .col -->
+
+            </div> <!-- .row -->
+
         </div> <!-- .container -->
     </section> <!-- #intro -->
 
-
-    <!--  FOOD AD SECTION
+    <!--  OFFERS SECTION
     =========================================================================== -->
 
-    <section id="food-ad" data-scroll="in-view-animation" class="parallax" style="background-image: url('./images/elephant-under-view.jpg');" data-type="background" data-speed="4">
-        <div class="container-fluid">
-
-            <h2 class="text-center">
-                Nam eleifend non velit venenatis iaculis. </br> 
-                Nullam quis nunc consequat.
-            </h2>
-
-        </div> <!-- .container-fluid -->
-    </section> <!-- #food-ad -->
-
-
-    <!--  SELLING POINTS SECTION
-    =========================================================================== -->
-
-    <section id="selling-pts" data-scroll="in-view-animation">
+    <section id="selling-pts" data-scroll="in-view-animation" class="primary-color-theme">
         <div class="container">
-            <div class="row well">
+            <div class="row">
+
+                <div class="col-sm-12">
+                    <div class="line-break-wrapper">
+                        <div class="line-break-text">
+                            <h3>Untitled OFFERS</h3>
+                        </div>
+                        <div class="line-break hidden-xs">
+                            <span class="icon-circle"></span>
+                            <hr>
+                            <span class="icon-circle"></span>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="col-sm-4 text-center selling-point">
                     <img src="./images/elephant-drawn.png" alt="icon">
@@ -216,58 +216,82 @@
         </div> <!-- .container -->
     </section> <!-- #selling-pts -->
 
-    <!--  TESTIMONIALS
+    <!-- MENU SUB NAV SECTION
     =========================================================================== -->
-
-    <section id="testimonials" class="container-fluid parallax" style="background-image: url('./images/elephant-top-view.jpg');">
-        <div class="row">
-            <div class="col-sm-4 col-sm-offset-4">
-
-
-
-            </div><!-- .col -->
-        </div><!-- .row -->
-    </section><!-- .container-fluid -->
-
-
-    <!--  GALLERY EXCERPT SECTION
-    =========================================================================== -->
-
-    <section id="gallery-excerpt">
-        <div class="container-fluid">
+    
+    <section id="sub-nav-menu-section" class="">
+        <div class="container">
             <div class="row">
+
                 <div class="col-sm-12">
-                    <h3 class="text-center">GALLERY</h3>
+                    <div class="line-break-wrapper">
+                        <div class="line-break-text">
+                            <h3>Untitled Menus</h3>
+                        </div>
+                        <div class="line-break hidden-xs">
+                            <span class="icon-circle"></span>
+                            <hr>
+                            <span class="icon-circle"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-sm-offset-4">
+
+                    <div id="menu-categories">
+                        <ul class="list-unstyled text-center">
+                            <li>Main Menu</li>
+                            <li>Lunch</li>
+                            <li>Breakfast</li>
+                            <li>Dessert</li>
+                            <li>Drinks</li>
+                        </ul>
+                    </div>
+                    
                 </div>
 
-                <div class="col-sm-4 col--no-padding gallery-excerpt__thumbnail">
-                    <img src="./images/elephant-top-view.jpg" class="img-responsive" alt="gallery photo">
-                </div> <!-- .col -->
-
-                <div class="col-sm-4 col--no-padding gallery-excerpt__thumbnail">
-                    <img src="./images/elephant-under-view.jpg" class="img-responsive" alt="gallery photo">
-                </div> <!-- .col -->
-
-                <div class="col-sm-4 col--no-padding gallery-excerpt__thumbnail">
-                    <img src="./images/elephant-top-view.jpg" class="img-responsive" alt="gallery photo">
-                </div> <!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </section><!-- #sub-nav-menu-section -->
 
 
-                <div class="col-sm-3 col--no-padding gallery-excerpt__thumbnail">
-                    <img src="./images/elephant-top-view.jpg" class="img-responsive" alt="gallery photo">
-                </div> <!-- .col -->
+    <!--  PARALLAX IMAGE SECTION
+    =========================================================================== -->
 
-                <div class="col-sm-3 col--no-padding gallery-excerpt__thumbnail">
-                    <img src="./images/elephant-under-view.jpg" class="img-responsive" alt="gallery photo">
-                </div> <!-- .col -->
+    <section id="parallax-img" class="parallax half-screen" style="background-image: url('./images/elephant-holding.jpg');" data-type="background" data-speed="4">
+        <div class="container">
+            <div class="row">
 
-                <div class="col-sm-3 col--no-padding gallery-excerpt__thumbnail">
-                    <img src="./images/elephant-top-view.jpg" class="img-responsive" alt="gallery photo">
-                </div> <!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </section><!-- #parallax-img -->
 
-                <div class="col-sm-3 col--no-padding hidden-xs gallery-excerpt__thumbnail">
-                    <img src="./images/elephant-under-view.jpg" class="img-responsive" alt="gallery photo">
-                </div> <!-- .col -->
+    <!-- LOCATION SECTION
+    =========================================================================== -->
+
+    <section id="location-section">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-sm-6">
+
+                    <div class="panel panel-default">
+                        <h3>Our Address</h3>
+                        <p>89 Swanpool Street, </br> Penyrn, Cornwall 1HT 5GT</p>
+
+                        <h6>Email:</h6>
+                        <p>www.amethyst.com</p>
+
+                        <h6>Telephone:</h6>
+                        <p class="lead">01234 567890</p>
+                    </div>
+
+                </div><!-- .col -->
+
+                <div class="col-sm-6">
+                    <div id="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158857.72810724893!2d-0.24168095260003167!3d51.52877184071027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon!5e0!3m2!1sen!2suk!4v1484738813346" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div><!-- #map -->
+                </div>
 
             </div> <!-- .row -->
         </div>  <!-- .container-fluid -->

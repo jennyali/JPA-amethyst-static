@@ -8,7 +8,9 @@
         display: flex;
     }
 
-    .well {  
+    .well {
+        margin-bottom: 0;
+          
         @include mediaQ--min($bp-sm) {
             padding-right: 60px;
 

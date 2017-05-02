@@ -3,6 +3,9 @@
 
 .navbar {
     border: none;
+    margin: 0;
+    min-height: 0;
+    border-radius: 0;
 }
 
 .navbar-wrapper {
@@ -48,6 +51,7 @@
 
 .navbar-collapse--appear {
     left: 0px;
+    z-index: 2;
 }
 
 // nav-pills
@@ -56,7 +60,7 @@
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
     color: $light;
-    background: $primary-color;
+    background: $primary-dark-color;
 }
 
 .nav-pills > li > a {
@@ -65,4 +69,21 @@
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 1px;
+    padding: 20px 0;
+    font-size: 18px;
+    transition: background 0.5s ease-out;
+}
+
+.nav > li > a:hover, 
+.nav > li > a:focus {
+    text-decoration: none;
+    background-color: $primary-color;
+}
+
+// navbar .affix 
+
+.navbar.affix {
+    width: 100%;
+    z-index: 2;
+    top: 0px;
 }
