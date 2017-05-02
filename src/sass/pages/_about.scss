@@ -1,0 +1,50 @@
+
+//#     HERO SECTION
+.about-hero-img {
+    @extend %background-img-cover;    
+}
+
+//#     ABOUT CONTENT
+.about-content__wrapper {
+    display: flex;
+}
+
+.about-content__wrapper__text {
+    text-align: center;
+    padding: 60px;
+}
+
+.about-content__wrapper__image {
+    @extend %background-img-cover;
+}
+
+//#     TESTIMONIALS
+#testimonials {
+    padding-bottom: 60px;
+}
+
+.testimonials__quote-icon {
+    text-align: center;
+    margin-bottom: 40px;
+
+    span {
+        background: $light;
+        color: $primary-color;
+        font-size: 50px;
+        padding: 25px 28px 15px;
+        border-radius: 100%;
+    }
+}
+
+.testimonials__content {
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+.testimonials__backquote {
+    float: right;
+    font-style: italic;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
