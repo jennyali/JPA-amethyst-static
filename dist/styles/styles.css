@@ -5761,13 +5761,10 @@ button.close {
        PLACEHOLDERS
 
 =============================*/
-.parallax, #intro .intro-img, .menu-aside__img, #contact-form, .about-hero-img, .about-content__wrapper__image {
+.parallax, #intro .intro-img, .menu-aside__img, #contact-form, .about-hero-img, .about-content__wrapper__image, .blog-hero-img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
-
-body {
-  padding-top: 50px; }
 
 h1 {
   font-size: 20px;
@@ -5823,6 +5820,9 @@ p.lead {
 
 .fill-screen {
   height: 0; }
+
+.background-height-small {
+  height: 360px; }
 
 .navbar {
   border: none;
@@ -6256,6 +6256,22 @@ footer.well {
   transform: scale(1);
   transition: all 0.5s 0.5s; }
 
+.site-header {
+  position: relative; }
+
+.site-header__social-links {
+  display: inline-block;
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%); }
+  .site-header__social-links span {
+    background: #222;
+    color: #FFFFFF;
+    padding: 10px 10px 5px;
+    border-radius: 50%;
+    font-size: 27px; }
+
 #site-logo {
   background: #FFFFFF;
   text-align: center;
@@ -6265,12 +6281,16 @@ footer.well {
     margin: auto;
     display: inline; }
   #site-logo p {
-    display: inline-block;
+    display: block;
     color: #6C2487;
     font-size: 48px;
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 2px; }
+    letter-spacing: 2px;
+    line-height: 1.5; }
+  #site-logo p.small {
+    line-height: 2.5;
+    font-size: 30px; }
 
 .menu-aside__img {
   height: 500px; }
@@ -6335,6 +6355,9 @@ footer.well {
   font-style: italic;
   font-size: 16px;
   letter-spacing: 1px; }
+
+.sidebar-right {
+  padding-top: 60px; }
 
 .dark-theme {
   background: #222;

@@ -1,4 +1,25 @@
 
+.site-header {
+    position: relative;
+}
+
+//# social media icons on left-side of .site-header
+.site-header__social-links {
+    display: inline-block;
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    span {
+        background: $dark;
+        color: $light;
+        padding: 10px 10px 5px;
+        border-radius: 50%;
+        font-size: 27px;
+    }
+}
+
 #site-logo {
     background: $light;
     text-align: center;
@@ -12,11 +33,17 @@
     }
 
     p {
-        display: inline-block;
+        display: block;
         color: $primary-color;
         font-size: 48px;
         font-weight: bold;
         text-transform: uppercase;
         letter-spacing: 2px;
+        line-height: 1.5;
+    }
+
+    p.small {
+        line-height: 2.5;
+        font-size: 30px;
     }
 }

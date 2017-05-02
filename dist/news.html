@@ -28,10 +28,30 @@
     =========================================================================== -->
 
     <header class="site-header" role="banner">
-        <div class="navbar-wrapper">
-            <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-                    
-                <div class="container">
+
+            <div class="site-header__social-links">
+                <ul class="list-unstyled list-inline">
+                    <li>
+                        <span class="icon-twitter"></span>
+                    </li>
+                    <li>
+                        <span class="icon-facebook"></span>
+                    </li>
+                    <li>
+                        <span class="icon-google-plus"></span>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="site-logo" class="container-fluid">
+                <a href="index.html">
+                    <img class="img-responsive" src="./images/elephant-drawn.png" alt="Amethyst logo">
+                </a>
+                <p>Amethyst</p>
+            </div><!-- #site-logo -->
+
+            <div class="navbar navbar-inverse" role="navigation" data-spy="affix" data-offset-top="197">                
+                <div class="navbar-wrapper">
                     
                     <div class="navbar-header">
                          <!-- creates a burger-menu for small screen, dissappears on big screen -->
@@ -41,29 +61,162 @@
                             <span class="icon-bar icon-bar-mid"></span>
                             <span class="icon-bar icon-bar-bottom"></span>
                         </button>
-                        <a class="navbar-brand" href="index.html">
-                            Amethyst
-                            <img class="img-responsive" src="./images/elephant-drawn.png" alt="Amethyst logo">
-                        </a>
 
                     </div> <!-- navbar-header -->
 
                     <div id="header-dropdown" class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav navbar-right">
+                        <ul class="nav nav-pills nav-justified">
                             <li class="active"><a href="index.html">Home</a></li>
                             <li><a href="menu.html">Menu</a></li>
-                            <li><a href="blog.html">blog</a></li>
+                            <li><a href="news.html">News</a></li>
+                            <li><a href="about.html">About Us</a></li>
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </div><!-- navbar-collapse -->   
 
-                </div><!-- container -->
+                </div><!-- navbar-wrapper -->
             </div><!-- navbar -->
-        </div><!-- navbar-wrapper -->
 
-    </header>
+    </header><!-- .site-header -->
 
     <main id="blog-page">
+
+        <!--  HERO IMAGE
+        =========================================================================== -->
+
+        <section id="blog-hero" class="blog-hero-img container-fluid background-height-small" style="background-image: url('./images/elephant-top-view.jpg');">
+
+        </section><!-- .container-fluid -->
+
+
+        <section id="blog-content" class="container">
+            <div class="row">
+
+        <!-- BLOG
+        =========================================================================== -->
+            <div class="col-sm-8">
+                <div>
+                    <h3>Latest News</h3>
+                </div>
+
+                <div class="blog-post panel panel-default">
+                    <div class="panel-heading">
+                        <h4>Untitled Post</h4>
+                    </div>
+                    <div class="panel-body">
+                        <img class="img-responsive" src="./images/elephant-side-view.jpg">
+                        <hr>
+                        <p>
+                            Vestibulum accumsan blandit commodo. Vestibulum quis aliquam ante,
+                            at pretium nisi. Nunc sed arcu vehicula lectus sollicitudin eleifend.
+                            Nulla porttitor venenatis leo, a posuere lorem egestas vel. Aenean 
+                            id gravida lectus. Suspendisse gravida pharetra nunc eu consectetur. 
+                            Vivamus placerat eget nulla id luctus. Suspendisse potenti. Etiam 
+                            vitae semper nibh, nec gravida mauris. Sed tempus quis magna et eleifend.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="blog-post panel panel-default">
+                    <div class="panel-heading">
+                        <h4>Untitled Post</h4>
+                    </div>
+                    <div class="panel-body">
+                        <img class="img-responsive" src="./images/elephant-side-view.jpg">
+                        <hr>
+                        <p>
+                            Vestibulum accumsan blandit commodo. Vestibulum quis aliquam ante,
+                            at pretium nisi. Nunc sed arcu vehicula lectus sollicitudin eleifend.
+                            Nulla porttitor venenatis leo, a posuere lorem egestas vel. Aenean 
+                            id gravida lectus. Suspendisse gravida pharetra nunc eu consectetur. 
+                            Vivamus placerat eget nulla id luctus. Suspendisse potenti. Etiam 
+                            vitae semper nibh, nec gravida mauris. Sed tempus quis magna et eleifend.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="blog-post panel panel-default">
+                    <div class="panel-heading">
+                        <h4>Untitled Post</h4>
+                    </div>
+                    <div class="panel-body">
+                        <img class="img-responsive" src="./images/elephant-side-view.jpg">
+                        <hr>
+                        <p>
+                            Vestibulum accumsan blandit commodo. Vestibulum quis aliquam ante,
+                            at pretium nisi. Nunc sed arcu vehicula lectus sollicitudin eleifend.
+                            Nulla porttitor venenatis leo, a posuere lorem egestas vel. Aenean 
+                            id gravida lectus. Suspendisse gravida pharetra nunc eu consectetur. 
+                            Vivamus placerat eget nulla id luctus. Suspendisse potenti. Etiam 
+                            vitae semper nibh, nec gravida mauris. Sed tempus quis magna et eleifend.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+
+        <!-- SIDEBAR
+        =========================================================================== --> 
+                <div class="col-sm-3 col-sm-offset-1">
+
+                    <aside class="sidebar-right">
+                        <div id="site-logo" class="container-fluid">
+                            <a href="index.html">
+                                <img class="img-responsive" src="./images/elephant-drawn.png" alt="Amethyst logo">
+                            </a>
+                            <p class="small">Amethyst</p>
+                        </div><!-- #site-logo -->
+
+                        <div class="widget">
+                            <h4>Join our mailing list</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur</p>
+                            <button class="btn btn-primary btn-lg">
+                                Click here to Subscribe
+                            </button>
+                        </div><!-- widget -->
+
+                        <div class="widget">
+                            <form role="form" class="search-form">
+                                <label for="sidebar-search" class="sr-only">Search
+                                <input type="text" placeholder="search the blog..." id="sidebar-search">
+
+                            </form>
+                        </div><!-- widget -->
+
+                        <div class="widget">
+                            <h4> About Boostrap to wordpress</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna ipsum, dictum a fermentum vel, porttitor ut urna. Fusce sodales commodo enim sed ultrices. In quis mollis lorem. Curabitur id rutrum elit, sit amet sodales ipsum. Nulla facilisi. Donec placerat tortor in aliquam aliquet. Quisque non nulla at orci laoreet mattis.</p>
+                        </div><!-- widget -->
+
+                        <div class="widget">
+                            <h4>Recent Posts</h4>
+                            <ul>
+                                <li><a href="#">Blog post #1</a></li>
+                                <li><a href="#">Blog post #1</a></li>
+                                <li><a href="#">Blog post #1</a></li>
+                                <li><a href="#">Blog post #1</a></li>
+                                <li><a href="#">Blog post #1</a></li>
+                            </ul>
+                        </div><!-- widget -->
+
+                        <div class="widget">
+                            <h4>Categories</h4>
+                            <ul>
+                                <li><a href="#">Category #1</a></li>
+                                <li><a href="#">Category #1</a></li>
+                                <li><a href="#">Category #1</a></li>
+                                <li><a href="#">Category #1</a></li>
+                                <li><a href="#">Category #1</a></li>
+                            </ul>
+                        </div><!-- widget -->
+
+                    </aside>
+
+                </div><!-- .col -->
+
+            </div><!-- .row -->
+        </section><!-- #blog-content -->
 
     </main><!-- #blog-page -->
 
