@@ -68,3 +68,9 @@ p.lead {
         font-size: 18px;
     }
 }
+
+// -- .fill-screen uses jquery to size div height to screen height -- //
+
+.fill-screen {
+    height: 0;
+}

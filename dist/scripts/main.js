@@ -116,8 +116,6 @@ function excerptModalCancelHandler(selector) {
 
 // --------     PARALLAX SLIGHT SCROLL UP EFFECT    --------//
 
-    
-
 $('section[data-type="background"]').each(function() {
 
     var $window = $(window);
@@ -129,7 +127,7 @@ $('section[data-type="background"]').each(function() {
         // scroll the background at var speed
         // the yPos is a negative value because we're scrolling up
 
-        var yPos = -($window.scrollTop() / $bgobj.data('speed'));
+        var yPos = ($window.scrollTop() / $bgobj.data('speed'));
 
         var coords = '50%' + yPos + 'px';
 
@@ -145,8 +143,6 @@ $('.carousel').carousel();
 
 
 //----------    INTO VIEW SCROLL EFFECTS --------------------------//
-
-
 
 var $window = $(window);
 
@@ -170,5 +166,15 @@ function check_if_in_view(){
         }
     });
 }
+
+//------------ Change a CSS class's height to match the current screens height ----------//
+
+$(window).on("load resize", function() {
+    $(".fill-screen").css("height", window.innerHeight);
+});
+
+$(window).on("load resize", function() {
+    $(".half-screen").css("height", window.innerHeight / 2 );
+});
 
 });
