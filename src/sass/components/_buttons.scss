@@ -27,3 +27,34 @@
             letter-spacing: 1px;
         }
 }
+
+// transparant button with primary-color border
+.btn-primary-clear {
+    background: transparent;
+    border: 1px solid $primary-color;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $light;
+
+    &:hover, &:focus, &:active {
+        background: $primary-color;
+        border: 1px solid $primary-color;
+        color: $light;
+    }
+}
+
+.btn-primary-color {
+    background: $primary-color;
+    border: 1px solid $primary-color;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $light;
+
+    &:hover, &:focus, &:active {
+        background: $primary-dark-color;
+        border: 1px solid $primary-dark-color;
+        color: $light;
+    }    
+}

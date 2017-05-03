@@ -10,6 +10,9 @@
 
     <link href="../node_modules/normalize.css" rel="text/html" type="text/css">
     <link href="https://file.myfontastic.com/ncjQH3qL3iqtxPyrLNBQDo/icons.css" rel="stylesheet">
+    
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500,700|Open+Sans" rel="stylesheet">
 
     <!-- Main CSS Stylesheet -->
     <link href="styles/styles.css" rel="stylesheet" type="text/css">
@@ -29,17 +32,33 @@
 
     <header class="site-header" role="banner">
 
+            <div class="site-header__social-links">
+                <ul class="list-unstyled list-inline">
+                    <li>
+                        <span class="icon-twitter"></span>
+                    </li>
+                    <li>
+                        <span class="icon-facebook"></span>
+                    </li>
+                    <li>
+                        <span class="icon-google-plus"></span>
+                    </li>
+                </ul>
+            </div><!-- .site-header__social-links -->
+
             <div id="site-logo" class="container-fluid">
                 <a href="index.html">
                     <img class="img-responsive" src="./images/elephant-drawn.png" alt="Amethyst logo">
                 </a>
-                <p>Amethyst</p>
+                <h1 class="bold primary-color hidden-xs">Amethyst</h1>
             </div><!-- #site-logo -->
 
             <div class="navbar navbar-inverse" role="navigation" data-spy="affix" data-offset-top="197">                
-                <div class="navbar-wrapper">
-                    
+                <div class="navbar-wrapper container">
+
                     <div class="navbar-header">
+                        <h1 class="bold primary-color">Amethyst</h1>
+
                          <!-- creates a burger-menu for small screen, dissappears on big screen -->
                         <button type="button" class="navbar-toggle" id="header-burger-menu-btn">
                             <span class="sr-only">Toggle navigation</span>
@@ -63,7 +82,7 @@
                 </div><!-- navbar-wrapper -->
             </div><!-- navbar -->
 
-    </header>
+    </header><!-- .site-header -->
 
     <!--  HERO CAROUSEL
     =========================================================================== -->
@@ -74,6 +93,14 @@
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
+
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#hero-index-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#hero-index-carousel" data-slide-to="1"></li>
+                    <li data-target="#hero-index-carousel" data-slide-to="2"></li>
+                </ol>
+
                 <div class="item active" style="background: mediumpurple;">
                 <img src="./images/elephant-side-view-two-clear.png" alt="elephant side view">
 
@@ -82,13 +109,14 @@
 
                             <div class="col-xs-5 col-md-4 col-md-offset-1">
                                 <h1>Lorem ipsum dolor sit amet.</h1>
+                                <button class="btn btn-lg btn-primary-color hidden-xs">Menu</button>
                             </div> <!-- .col -->
 
                         </div> <!-- .row -->
                     </div> <!-- .container -->
                 </div><!-- .item -->
 
-                <div class="item" style="background: lightpink;">
+                <div class="item" style="background: lightskyblue;">
                 <img src="./images/elephant-side-view-two-clear.png" alt="elephant side view">
 
                     <div class="carousel-inner__text container-fluid">
@@ -96,20 +124,22 @@
 
                             <div class="col-xs-5 col-md-4 col-md-offset-1">
                                 <h1>Curabitur bibendum et justo vel.</h1>
+                                <button class="btn btn-lg btn-primary-color hidden-xs">News</button>
                             </div> <!-- .col -->
 
                         </div> <!-- .row -->
                     </div> <!-- .container -->
                 </div><!-- .item -->
 
-                <div class="item" style="background: wheat;">
+                <div class="item" style="background: coral;">
                 <img src="./images/elephant-side-view-two-clear.png" alt="elephant side view">
 
                     <div class="carousel-inner__text container-fluid">
                         <div class="row">
 
-                            <div class="col-xs-5 col-md-4 col-md-offset-1">
+                            <div class="col-xs-5 col-md-4 col-md-offset-1 light-theme-text">
                                 <h1>Suspendisse potenti. Nullam ut lorem.</h1>
+                                <button class="btn btn-lg btn-primary-color hidden-xs">Contact</button>
                             </div> <!-- .col -->
 
                         </div> <!-- .row -->
@@ -125,9 +155,10 @@
 
     <section id="intro" data-scroll="in-view-animation">
         <div class="container-fluid">
-            <div class="row">
 
-                <div class="col-sm-6 col-md-6 well text-center">
+            <div class="row intro-img" style="background-image: url('./images/elephant-top-view.jpg');">
+
+                <div class="col-sm-6 col-md-6 well text-center light-theme-transparent">
                     <h3>Pellentesque erat est.</h3>
                     <p class="lead">
                         Donec convallis sapien non quam bibendum mattis. Mauris id sapien lorem. 
@@ -137,17 +168,11 @@
 
                 </div> <!-- .col -->
 
-                <div class=" col-sm-6 col-md-6 intro-img hidden-xs" style="background-image: url('./images/elephant-top-view.jpg');">
-                </div> <!-- .col -->
-
             </div> <!-- .row -->
 
-            <div class="row">
+            <div class="row intro-img" style="background-image: url('./images/elephant-under-view.jpg');">
 
-                <div class=" col-sm-6 col-md-6 intro-img hidden-xs" style="background-image: url('./images/elephant-under-view.jpg');">
-                </div> <!-- .col -->
-
-                <div class="col-sm-6 col-md-6 well text-center dark-theme">
+                <div class="col-sm-6 col-sm-offset-6 well text-center dark-theme-transparent">
                     <h3>Pellentesque erat est.</h3>
                     <p class="lead">
                         Donec convallis sapien non quam bibendum mattis. Mauris id sapien lorem. 
@@ -174,7 +199,7 @@
                         <div class="line-break-text">
                             <h3>Untitled OFFERS</h3>
                         </div>
-                        <div class="line-break hidden-xs">
+                        <div class="line-break">
                             <span class="icon-circle"></span>
                             <hr>
                             <span class="icon-circle"></span>
@@ -184,32 +209,32 @@
 
                 <div class="col-sm-4 text-center selling-point">
                     <img src="./images/elephant-drawn.png" alt="icon">
+                    <h4 class="small">Any</h4>
                     <h4>Vestibulum augue</h4>
                     <hr class="sm-width">
-                    <p>
-                        Cras ornare dignissim diam, vulputate tincidunt erat interdum vitae. 
-                        Nunc interdum vehicula justo, ac auctor augue scelerisque id. 
-                    </p>
+                    <p>From</p>
+                    <h4>3.99</h4>
+                    <p>Untill noon everyday</p>
                 </div> <!-- .col -->
 
                 <div class="col-sm-4 text-center selling-point">
                     <img src="./images/elephant-drawn.png" alt="icon">
-                    <h4>Aenean sit</h4>
+                    <h4 class="small">Any</h4>
+                    <h4>Vestibulum augue</h4>
                     <hr class="sm-width">
-                    <p>
-                         Donec pharetra erat at nunc faucibus gravida. Mauris vel vestibulum augue. 
-                         Sed vel sapien aliquam, auctor erat scelerisque, condimentum lorem.
-                    </p>
+                    <p>From</p>
+                    <h4>3.99</h4>
+                    <p>Untill noon everyday</p>
                 </div> <!-- .col -->
 
                 <div class="col-sm-4 text-center selling-point">
                     <img src="./images/elephant-drawn.png" alt="icon">
-                    <h4>Duis dictum</h4>
+                    <h4 class="small">Any</h4>
+                    <h4>Vestibulum augue</h4>
                     <hr class="sm-width">
-                    <p>
-                        Mauris dapibus convallis massa in porta. Pellentesque habitant morbi 
-                        tristique senectus et netus et malesuada fames ac turpis egestas.
-                    </p>
+                    <p>From</p>
+                    <h4>3.99</h4>
+                    <p>Untill noon everyday</p>
                 </div> <!-- .col -->
 
             </div> <!-- .row .well -->
