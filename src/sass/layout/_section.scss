@@ -27,10 +27,14 @@
         transition: all 0.5s 0.7s;
     }
 
+    .well {
+        opacity: 1;
+        transition: all 0.5s;
+    }
+
     .intro-img {
         opacity: 1;
-        left: 0px;
-        transition: all 0.5s 0.3s;
+        transition: all 0.5s;
     }
 }
 

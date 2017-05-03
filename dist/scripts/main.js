@@ -177,4 +177,9 @@ $(window).on("load resize", function() {
     $(".half-screen").css("height", window.innerHeight / 2 );
 });
 
+//-------------------------
+
+//console.log($('.site-header').height);
+
+
 });

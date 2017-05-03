@@ -5,11 +5,15 @@
 
 //# social media icons on left-side of .site-header
 .site-header__social-links {
-    display: inline-block;
+    display: none;
     position: absolute;
     left: 30px;
     top: 50%;
     transform: translateY(-50%);
+
+    @include mediaQ--min($bp-md) {
+        display: inline-block;
+    }
 
     span {
         background: $dark;
