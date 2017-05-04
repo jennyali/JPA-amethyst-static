@@ -29,17 +29,33 @@
 
     <header class="site-header" role="banner">
 
+            <div class="site-header__social-links">
+                <ul class="list-unstyled list-inline">
+                    <li>
+                        <span class="icon-twitter"></span>
+                    </li>
+                    <li>
+                        <span class="icon-facebook"></span>
+                    </li>
+                    <li>
+                        <span class="icon-google-plus"></span>
+                    </li>
+                </ul>
+            </div><!-- .site-header__social-links -->
+
             <div id="site-logo" class="container-fluid">
                 <a href="index.html">
                     <img class="img-responsive" src="./images/elephant-drawn.png" alt="Amethyst logo">
                 </a>
-                <p>Amethyst</p>
+                <h1 class="bold primary-color hidden-xs">Amethyst</h1>
             </div><!-- #site-logo -->
 
             <div class="navbar navbar-inverse" role="navigation" data-spy="affix" data-offset-top="197">                
-                <div class="navbar-wrapper">
-                    
+                <div class="navbar-wrapper container">
+
                     <div class="navbar-header">
+                        <h1 class="bold primary-color">Amethyst</h1>
+
                          <!-- creates a burger-menu for small screen, dissappears on big screen -->
                         <button type="button" class="navbar-toggle" id="header-burger-menu-btn">
                             <span class="sr-only">Toggle navigation</span>
@@ -63,7 +79,7 @@
                 </div><!-- navbar-wrapper -->
             </div><!-- navbar -->
 
-    </header>
+    </header><!-- .site-header -->
 
     <main id="menu-page">
 
@@ -174,7 +190,7 @@
         <!--  PARALLAX IMAGE SECTION
     =========================================================================== -->
 
-    <section id="parallax-img" class="parallax half-screen" style="background-image: url('./images/elephant-holding.jpg');" data-type="background" data-speed="10">
+    <section id="parallax-img" class="parallax third-screen" style="background-image: url('./images/elephant-holding.jpg');" data-type="background" data-speed="10">
         <div class="container">
             <div class="row">
 
@@ -185,40 +201,70 @@
 
     </main>
 
-        <!--  FOOTER
+    <!--  CONTACT DETAILS
+    =========================================================================== -->
+    <section id="contact-details">
+        <div class="container-fluid primary-color-theme">
+            <div class="row">
+
+                <div class="col-sm-8 col-sm-offset-2 text-center contact-details__wrapper">
+
+                    <span class="icon-phone-2"></span>
+                    <h6>01234 567890</h6>
+
+                </div><!-- .contact-details__wrapper -->
+
+            </div><!-- .row -->
+        </div><!-- .container-fluid -->
+    </section><!-- #contact-details -->
+
+    <!--  FOOTER
     =========================================================================== -->
     <footer class="dark-theme well">
         <div class="container">
 
-            <div class="row">
-                <div class="col-sm-4">
+            <div class="row footer-content">
+                <div class="col-sm-6 col-md-4">
 
-                    <h5>Sign up</h5>
+                    <h5>Sign up to Amethyst!</h5>
+                    <p>Get all the latest news, competitions and promotions straight to your inbox</p>
+                    
+                    <hr>
+
                     <form class="form-horizontal">
-                        <div class="input-group input-group--curved">
-                            <input class="form-control" type="text">
+                        <div class="input-group ">
+                            <input class="form-control input-lg" type="text">
                             <div class="input-group-btn">
-                                <button type="submit" class="btn btn-default btn-round btn-secondary">Subscribe</button>
-                            </div>
-                        </div>
-                    </form>
+                                <button type="submit" class="btn btn-default btn-custom-1">
+                                    <span class="icon-arrow-40"></span>
+                                </button>
+                            </div><!-- .form-control -->
+                        </div><!-- .input-group -->
+                    </form><!-- form -->
 
                 </div><!-- .col -->
-                <div class="col-sm-4 col-sm-offset-4">
+                <div class="col-sm-6 col-md-4 col-md-offset-4">
 
-                    <h5>Follow Us</h5>
-                    <ul class="list-unstyled list-inline">
-                        <li><span class="icon-twitter"></span></li>
-                        <li><span class="icon-facebook"></span></li>
-                        <li><span class="icon-google-plus"></span></li>
-                    </ul>
+                    <div class="site-header__social-links--invert">
+                        <ul class="list-unstyled list-inline">
+                            <li>
+                                <span class="icon-twitter"></span>
+                            </li>
+                            <li>
+                                <span class="icon-facebook"></span>
+                            </li>
+                            <li>
+                                <span class="icon-google-plus"></span>
+                            </li>
+                        </ul>
+                    </div><!-- .site-header__social-links -->
 
                 </div><!-- .col -->
 
-            </div><!-- .row -->
+            </div><!-- .footer-content -->
 
             <div class="row">
-                <div class="col-sm-12">
+                <div class="col-sm-12 text-center">
 
                     <ul class="list-unstyled list-inline">
                         <li><a href="index.html">Untitled</a></li>

@@ -177,6 +177,10 @@ $(window).on("load resize", function() {
     $(".half-screen").css("height", window.innerHeight / 2 );
 });
 
+$(window).on("load resize", function() {
+    $(".third-screen").css("height", window.innerHeight / 3 );
+});
+
 //-------------------------
 
 //console.log($('.site-header').height);

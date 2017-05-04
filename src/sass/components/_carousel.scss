@@ -52,6 +52,20 @@
         transform: translateY(-50%);
         width: 100%;
     }
+
+}
+
+#testimonials__carousel {
+    height: 100%;
+
+    .carousel-inner {
+        margin: 90px 0;
+        color: $light;
+    }
+
+    .item {
+        padding: 30px;
+    }
 }
 
 

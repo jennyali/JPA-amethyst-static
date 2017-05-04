@@ -20,7 +20,16 @@
 
 //#     TESTIMONIALS
 #testimonials {
-    padding-bottom: 60px;
+    @extend %background-img-cover;
+    //padding-bottom: 60px;
+    position: relative;
+}
+
+.testimonials__content-wrapper {
+    position: relative;
+    z-index: 3;
+    background: rgba($dark, 0.8);
+
 }
 
 .testimonials__quote-icon {
