@@ -22,3 +22,20 @@
         }
     }
 }
+
+.form-custom-1 {
+
+    input, textarea {
+        background: rgba($dark, 0.1);
+        border-radius: 0;
+        border: none;
+        border-bottom: 2px solid $primary-color;
+        box-shadow: none;
+    }
+
+    .form-control:focus,
+    .form-control:hover { 
+        border-color: $dark;
+        box-shadow: none;
+    }
+}
