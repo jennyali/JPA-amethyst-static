@@ -1,0 +1,8 @@
+
+// Banner - fluid container styling inc. h3 heading.
+
+.banner {
+    @extend %text-shadow;
+    background: $primary-color;
+    color: $light;
+}

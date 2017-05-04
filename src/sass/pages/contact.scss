@@ -12,6 +12,14 @@
     }
 }
 
-#contact-form {
+#contact-section {
     @extend %background-img-cover;
+}
+
+.contact-section__form {
+    background: rgba($light, 0.7);
+}
+
+.contact-section__form__content {
+    padding: 60px 30px 120px;
 }
