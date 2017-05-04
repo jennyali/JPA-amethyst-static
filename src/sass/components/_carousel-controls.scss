@@ -1,6 +1,7 @@
 
 .carousel-control {
     top: 50%;
+    width: 10%;
 }
 
 .carousel-control.left, .carousel-control.right {
@@ -8,11 +9,11 @@
     background-repeat: no-repeat;
 
     span {
-        background: $light;
+        //background: $light;
         color: $dark;
         padding: 10px 10px 5px;
         border-radius: 50%;
         font-size: 27px;
-        border: 4px solid $dark;
+        //border: 4px solid $dark;
     }
 }

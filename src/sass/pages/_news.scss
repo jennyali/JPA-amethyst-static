@@ -1,4 +1,13 @@
 
+#blog-content {
+    h3 {
+        @extend %text-shadow;
+    }
+}
+
+.blog-post {
+    padding: 30px;
+}
 
 .blog-hero-img {
     @extend %background-img-cover;
@@ -7,3 +16,4 @@
 .sidebar-right{
     padding-top: 60px;
 }
+

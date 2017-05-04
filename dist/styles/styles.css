@@ -5761,12 +5761,12 @@ button.close {
        PLACEHOLDERS
 
 =============================*/
-.parallax, #intro .intro-img, .menu-aside__img, #contact-form, .about-hero-img, .about-content__wrapper__image, .blog-hero-img {
+.parallax, #intro .intro-img, .menu-aside__img, #contact-form, .about-hero-img, .about-content__wrapper__image, #testimonials, .blog-hero-img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
 
-.line-break-text h3, .selling-point h4, #contact-details span, #contact-details h6 {
+.line-break-text h3, .selling-point h4, #contact-details span, #contact-details h6, #blog-content h3 {
   text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.8); }
 
 body {
@@ -5992,6 +5992,14 @@ p.lead {
   transform: translateY(-50%);
   width: 100%; }
 
+#testimonials__carousel {
+  height: 100%; }
+  #testimonials__carousel .carousel-inner {
+    margin: 90px 0;
+    color: #FFFFFF; }
+  #testimonials__carousel .item {
+    padding: 30px; }
+
 .carousel-fade .carousel-inner .item {
   transition-property: opacity; }
 
@@ -6186,18 +6194,17 @@ p.lead {
   display: flex; }
 
 .carousel-control {
-  top: 50%; }
+  top: 50%;
+  width: 10%; }
 
 .carousel-control.left, .carousel-control.right {
   background-image: none;
   background-repeat: no-repeat; }
   .carousel-control.left span, .carousel-control.right span {
-    background: #FFFFFF;
     color: #222;
     padding: 10px 10px 5px;
     border-radius: 50%;
-    font-size: 27px;
-    border: 4px solid #222; }
+    font-size: 27px; }
 
 #intro {
   overflow: hidden; }
@@ -6550,7 +6557,12 @@ footer.well {
   padding: 60px; }
 
 #testimonials {
-  padding-bottom: 60px; }
+  position: relative; }
+
+.testimonials__content-wrapper {
+  position: relative;
+  z-index: 3;
+  background: rgba(34, 34, 34, 0.8); }
 
 .testimonials__quote-icon {
   text-align: center;
@@ -6572,6 +6584,9 @@ footer.well {
   font-style: italic;
   font-size: 16px;
   letter-spacing: 1px; }
+
+.blog-post {
+  padding: 30px; }
 
 .sidebar-right {
   padding-top: 60px; }
