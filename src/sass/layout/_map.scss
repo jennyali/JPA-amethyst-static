@@ -3,7 +3,18 @@
     height: 200px;
 
     @include mediaQ--min($bp-sm) {
-        height: 375px;
+        min-height: 440px;
     }
-    
+}
+
+.location-section__text-wrapper {
+    text-align: center;
+
+    @include mediaQ--min($bp-sm) {
+        text-align: left;
+
+        @include mediaQ--min($bp-lg) {
+            min-height: 400px;
+        }
+    }
 }
