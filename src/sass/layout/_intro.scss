@@ -43,3 +43,10 @@
         }
     }
 }
+
+.intro-img__text-wrapper {
+
+    @include mediaQ--min($bp-lg) {
+        min-height: 400px;
+    }
+}

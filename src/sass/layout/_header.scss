@@ -16,11 +16,31 @@
     }
 
     span {
+        background: $light;
+        color: $dark;
+        padding: 10px 10px 5px;
+        border-radius: 50%;
+        font-size: 27px;
+        border: 4px solid $dark;
+    }
+}
+
+.site-header__social-links--invert {
+    position: absolute;
+    right: 15px;
+
+    @include mediaQ--max($bp-sm) {
+        position: relative;
+        margin: 45px 0 0;
+    }
+
+    span {
         background: $dark;
         color: $light;
         padding: 10px 10px 5px;
         border-radius: 50%;
         font-size: 27px;
+        border: 4px solid $light;
     }
 }
 

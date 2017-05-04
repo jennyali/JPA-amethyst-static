@@ -22,11 +22,11 @@ h1 {
     }
 }
 
-h1.primary-color {
+.primary-color {
     color: $primary-color;
 }
 
-h1.bold {
+.bold {
     font-weight: bold;
 }
 
@@ -61,8 +61,30 @@ h4 {
     font-size: 28px;
 }
 
+h5 {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+h6 {
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 40px;
+
+    @include mediaQ--min($bp-md) {
+        font-size: 56px;
+    }
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: $font-family-heading;
+}
+
+hr {
+    border-top: 1px solid transparent;
 }
 
 hr.sm-width {
