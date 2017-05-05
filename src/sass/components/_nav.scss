@@ -6,6 +6,7 @@
     margin: 0;
     min-height: 0px;
     border-radius: 0;
+    z-index: 10;
 }
 
 .navbar-wrapper {
@@ -39,6 +40,8 @@
 }
 
 .navbar-inverse {
+    background-color: $dark;
+    
     @include mediaQ--max($bp-sm) {
         background: $light;
 

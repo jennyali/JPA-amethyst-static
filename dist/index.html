@@ -95,7 +95,7 @@
             <div class="carousel-inner" role="listbox">
 
                 <!-- Indicators -->
-                <ol class="carousel-indicators">
+                <ol class="carousel-indicators visible-xs">
                     <li data-target="#hero-index-carousel" data-slide-to="0" class="active"></li>
                     <li data-target="#hero-index-carousel" data-slide-to="1"></li>
                     <li data-target="#hero-index-carousel" data-slide-to="2"></li>
@@ -145,6 +145,16 @@
                         </div> <!-- .row -->
                     </div> <!-- .container -->
                 </div><!-- .item -->
+
+                                  <!-- Left and right controls -->
+                <a class="left carousel-control hidden-xs" href="#hero-index-carousel" data-slide="prev">
+                    <span class="icon-arrow-39"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control hidden-xs" href="#hero-index-carousel" data-slide="next">
+                    <span class="icon-arrow-40"></span>
+                    <span class="sr-only">Next</span>
+                </a>
 
             </div><!-- .carousel-inner -->
         </div><!-- #hero-carousel -->
@@ -208,35 +218,41 @@
                             <span class="icon-circle"></span>
                         </div>
                     </div>
-                </div>
+                </div><!-- .col -->
 
                 <div class="col-sm-4 text-center selling-point">
-                    <img src="./images/elephant-drawn.png" alt="icon">
-                    <h4 class="small">Any</h4>
-                    <h4>Vestibulum augue</h4>
-                    <hr class="sm-width">
+                    <div class="selling-point__img-outer-div">
+                        <img src="./images/elephant-top-view.jpg" alt="icon">
+                    </div>
+                    <h4 class="selling-point__title small">Any</h4>
+                    <h4 class="selling-point__title">Vestibulum augue</h4>
+                    <hr class="sm-width selling-point__line-break">
                     <p>From</p>
-                    <h4>3.99</h4>
+                    <h4 class="selling-point__price">3.99</h4>
                     <p>Untill noon everyday</p>
                 </div> <!-- .col -->
 
                 <div class="col-sm-4 text-center selling-point">
-                    <img src="./images/elephant-drawn.png" alt="icon">
-                    <h4 class="small">Any</h4>
-                    <h4>Vestibulum augue</h4>
-                    <hr class="sm-width">
+                    <div class="selling-point__img-outer-div">
+                        <img src="./images/elephant-under-view.jpg" alt="icon">
+                    </div>
+                    <h4 class="selling-point__title small">Any</h4>
+                    <h4 class="selling-point__title">Vestibulum augue</h4>
+                    <hr class="sm-width selling-point__line-break">
                     <p>From</p>
-                    <h4>3.99</h4>
+                    <h4 class="selling-point__price">3.99</h4>
                     <p>Untill noon everyday</p>
                 </div> <!-- .col -->
 
                 <div class="col-sm-4 text-center selling-point">
-                    <img src="./images/elephant-drawn.png" alt="icon">
-                    <h4 class="small">Any</h4>
-                    <h4>Vestibulum augue</h4>
-                    <hr class="sm-width">
+                    <div class="selling-point__img-outer-div">
+                        <img src="./images/elephant-top-view.jpg" alt="icon">
+                    </div>
+                    <h4 class="selling-point__title small">Any</h4>
+                    <h4 class="selling-point__title">Vestibulum augue</h4>
+                    <hr class="sm-width selling-point__line-break">
                     <p>From</p>
-                    <h4>3.99</h4>
+                    <h4 class="selling-point__price">3.99</h4>
                     <p>Untill noon everyday</p>
                 </div> <!-- .col -->
 
@@ -244,37 +260,37 @@
         </div> <!-- .container -->
     </section> <!-- #selling-pts -->
 
-    <!-- MENU SUB NAV SECTION
+    <!-- MENU OPTIONS SECTION
     =========================================================================== -->
     
     <section id="sub-nav-menu-section" class="menu-section">
         <div class="container">
             <div class="row well">
 
-                <div class="col-sm-12 text-center">
+                <div class="col-sm-8 col-sm-offset-2 text-center">
                     <h3 class="bold primary-color">Menus</h3>
                 </div>
 
-                <div id="menu-categories" class="col-sm-12">
+                <div id="menu-categories" class="col-sm-8 col-sm-offset-2">
 
-                    <div class="col-sm-4 menu-item">
-                        <h4>Food Menu</h4>
+                    <div class="col-sm-6 col-md-4 menu-item">
+                        <a href="menu-category.html"><h4 class="small-size">Food Menu</h4></a>
                     </div>
 
-                    <div class="col-sm-4 menu-item">
-                        <h4>Food Menu</h4>
+                    <div class="col-sm-6 col-md-4 menu-item">
+                        <h4 class="small-size">Food Menu</h4>
                     </div>
 
-                    <div class="col-sm-4 menu-item">
-                        <h4>Food Menu</h4>
+                    <div class="col-sm-6 col-md-4 menu-item">
+                        <h4 class="small-size">Food Menu</h4>
                     </div>
 
-                    <div class="col-sm-4 menu-item">
-                        <h4>Food Menu</h4>
+                    <div class="col-sm-6 col-md-4 menu-item">
+                        <h4 class="small-size">Food Menu</h4>
                     </div>
 
-                    <div class="col-sm-4 menu-item">
-                        <h4>Food Menu</h4>
+                    <div class="col-sm-6 col-md-4 menu-item">
+                        <h4 class="small-size">Food Menu</h4>
                     </div>
 
                 </div>
@@ -305,7 +321,7 @@
                 <div class="col-sm-6 well">
                     <div class="col-lg-8 col-lg-offset-4 location-section__text-wrapper">
 
-                        <div class="panel panel-default">
+                        <div class="panel">
                             <h3 class="bold primary-color">Our Address</h3>
                             <p>
                                 89 Swanpool Street, </br> 
@@ -430,17 +446,12 @@
             <div class="row">
                 <div class="col-sm-12 text-center">
 
-                    <ul class="list-unstyled list-inline">
+                    <ul class="list-unstyled list-inline footer__page-links">
                         <li><a href="index.html">Untitled</a></li>
-                        <span>/</span>
                         <li><a href="index.html">Untitled</a></li>
-                        <span>/</span>
                         <li><a href="index.html">Untitled</a></li>
-                        <span>/</span>
                         <li><a href="index.html">Untitled</a></li>
-                        <span>/</span>
                         <li><a href="index.html">Untitled</a></li>
-                        <span>/</span>
                         <li><a href="index.html">Untitled</a></li>
                     </ul>
 
@@ -448,9 +459,9 @@
             </div><!-- .row -->
 
             <div class="row">
-                <div class="col-sm-12">
+                <div class="col-sm-12 text-center">
 
-                    <p>Copyright Jen Ali 2017</p>
+                    <p class="footer__copyright">Copyright Jen Ali 2017</p>
 
                 </div><!-- .col -->
             </div><!-- .row -->
