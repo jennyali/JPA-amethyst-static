@@ -1,0 +1,9 @@
+
+#location-hero-section {
+    @extend %background-img-cover;
+    height: 400px;
+
+    @include mediaQ--min($bp-sm) {
+        height: 600px;
+    }  
+}

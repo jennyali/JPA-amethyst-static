@@ -4,10 +4,6 @@
 #intro {
     overflow: hidden;
 
-    @include mediaQ--min($bp-sm) {
-        border-top: 10px solid $primary-color;
-    }
-
     .row {
         display: flex;
     }
