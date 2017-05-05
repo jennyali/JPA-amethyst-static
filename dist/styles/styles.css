@@ -5761,7 +5761,7 @@ button.close {
        PLACEHOLDERS
 
 =============================*/
-.parallax, #intro .intro-img, .menu-aside__img, #contact-section, .about-hero-img, .about-content__wrapper__image, #testimonials, .blog-hero-img {
+.parallax, #intro .intro-img, .menu-aside__img, #contact-section, .about-hero-img, .about-content__wrapper__image, #testimonials, .blog-hero-img, #location-hero-section {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
@@ -6018,12 +6018,22 @@ p.lead {
   width: 100%; }
 
 #testimonials__carousel {
-  height: 100%; }
+  height: 100%;
+  padding-bottom: 60px; }
   #testimonials__carousel .carousel-inner {
-    margin: 90px 0;
-    color: #FFFFFF; }
+    margin: 30px 0;
+    color: #FFFFFF;
+    max-width: 1200px;
+    margin: auto; }
   #testimonials__carousel .item {
     padding: 30px; }
+  #testimonials__carousel .carousel-indicators li {
+    border-color: #222;
+    width: 20px;
+    height: 20px;
+    margin: 0 3px; }
+  #testimonials__carousel .carousel-indicators li.active {
+    background: #222; }
 
 .carousel-inner:hover .carousel-control {
   opacity: 1; }
@@ -6143,7 +6153,8 @@ p.lead {
   border-radius: 0;
   border: none;
   border-bottom: 2px solid #6C2487;
-  box-shadow: none; }
+  box-shadow: none;
+  color: #4c195f; }
 
 .form-custom-1 .form-control:focus,
 .form-custom-1 .form-control:hover {
@@ -6272,11 +6283,23 @@ p.lead {
   background: #6C2487;
   color: #FFFFFF; }
 
+.form-custom-1 {
+  max-width: 620px;
+  margin: auto;
+  padding: 40px 30px 60px;
+  background: rgba(255, 255, 255, 0.8); }
+  @media (min-width: 767px) {
+    .form-custom-1 {
+      padding: 10px 60px 90px; } }
+  @media (min-width: 767px) and (min-width: 992px) {
+    .form-custom-1 {
+      padding: 40px 90px 90px; } }
+
+.panel {
+  border: none; }
+
 #intro {
   overflow: hidden; }
-  @media (min-width: 767px) {
-    #intro {
-      border-top: 10px solid #6C2487; } }
   #intro .row {
     display: -ms-flexbox;
     display: flex; }
@@ -6439,9 +6462,9 @@ footer h5 {
 
 footer.well {
   border-radius: 0px; }
-  @media (max-width: 767px) {
+  @media (min-width: 767px) {
     footer.well {
-      padding: 20px 0px; } }
+      padding: 60px 0; } }
 
 .footer-content {
   padding: 30px 0 60px; }
@@ -6619,27 +6642,44 @@ footer.well {
 #hero-contact div {
   height: 400px;
   padding: 0; }
-  #hero-contact div::after {
-    width: 100%;
-    height: 400px;
-    background: rgba(0, 0, 0, 0.3); }
 
 .contact-section__form {
-  background: rgba(255, 255, 255, 0.7); }
+  background: rgba(34, 34, 34, 0.5); }
 
 .contact-section__form__content {
-  padding: 60px 30px 120px; }
+  padding: 0; }
+  @media (min-width: 767px) {
+    .contact-section__form__content {
+      padding: 60px 30px 120px; } }
 
 #parallax-img {
   background-color: #4c195f; }
 
+.about-hero-img {
+  height: 400px; }
+  @media (min-width: 767px) {
+    .about-hero-img {
+      height: 600px; } }
+
 .about-content__wrapper {
-  display: -ms-flexbox;
-  display: flex; }
+  display: block; }
+  @media (min-width: 767px) {
+    .about-content__wrapper {
+      display: -ms-flexbox;
+      display: flex; } }
 
 .about-content__wrapper__text {
   text-align: center;
   padding: 60px; }
+  .about-content__wrapper__text p {
+    max-width: 600px;
+    margin: auto; }
+
+.about-content__wrapper__image {
+  display: none; }
+  @media (min-width: 767px) {
+    .about-content__wrapper__image {
+      display: block; } }
 
 #testimonials {
   position: relative; }
@@ -6647,7 +6687,8 @@ footer.well {
 .testimonials__content-wrapper {
   position: relative;
   z-index: 3;
-  background: rgba(34, 34, 34, 0.8); }
+  background: #6C2487;
+  padding: 30px 0 90px; }
 
 .testimonials__quote-icon {
   text-align: center;
@@ -6665,7 +6706,6 @@ footer.well {
   line-height: 1.5; }
 
 .testimonials__backquote {
-  float: right;
   font-style: italic;
   font-size: 16px;
   letter-spacing: 1px; }
@@ -6677,6 +6717,12 @@ footer.well {
 
 .sidebar-right {
   padding-top: 60px; }
+
+#location-hero-section {
+  height: 400px; }
+  @media (min-width: 767px) {
+    #location-hero-section {
+      height: 600px; } }
 
 .dark-theme {
   background: #222;

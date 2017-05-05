@@ -1,0 +1,15 @@
+
+.form-custom-1 {
+    max-width: 620px;
+    margin: auto;
+    padding: 40px 30px 60px;
+    background: rgba($light, 0.8);
+
+    @include mediaQ--min($bp-sm) {
+        padding: 10px 60px 90px;
+        
+        @include mediaQ--min($bp-md) {
+            padding: 40px 90px 90px;
+        }
+    }
+}

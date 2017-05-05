@@ -1,21 +1,40 @@
 
 //#     HERO SECTION
 .about-hero-img {
-    @extend %background-img-cover;    
+    @extend %background-img-cover; 
+    height: 400px;
+
+    @include mediaQ--min($bp-sm) {
+        height: 600px;
+    }   
 }
 
 //#     ABOUT CONTENT
 .about-content__wrapper {
-    display: flex;
+    display: block;
+
+    @include mediaQ--min($bp-sm) {
+        display: flex;
+    }
 }
 
 .about-content__wrapper__text {
     text-align: center;
     padding: 60px;
+
+    p {
+        max-width: 600px;
+        margin: auto;
+    }
 }
 
 .about-content__wrapper__image {
     @extend %background-img-cover;
+    display: none;
+
+        @include mediaQ--min($bp-sm) {
+            display: block;
+        }
 }
 
 //#     TESTIMONIALS
@@ -28,7 +47,8 @@
 .testimonials__content-wrapper {
     position: relative;
     z-index: 3;
-    background: rgba($dark, 0.8);
+    background: $primary-color;
+    padding: 30px 0 90px;
 
 }
 
@@ -52,7 +72,6 @@
 }
 
 .testimonials__backquote {
-    float: right;
     font-style: italic;
     font-size: 16px;
     letter-spacing: 1px;
