@@ -1,7 +1,13 @@
 
+.carousel-indicators { 
+    z-index: 1;
+}
+
 .carousel-control {
     top: 50%;
     width: 10%;
+    opacity: 0;
+    transition: opacity 0.2s;
 }
 
 .carousel-control.left, .carousel-control.right {

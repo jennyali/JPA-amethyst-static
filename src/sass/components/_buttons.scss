@@ -41,6 +41,24 @@
     border-bottom-right-radius: 50%;
     font-size: 22px;
     padding-top: 10px;
+
+    span {
+        position: relative;
+        left: 0;
+        transition: left 0.2s;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+        background: $primary-color;
+        color: $light;
+
+        span {
+            left: 5px;
+        }
+    }
+
 }
 
 // transparant button with primary-color border

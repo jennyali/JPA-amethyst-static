@@ -1,20 +1,28 @@
 
 //# .menu-section div
 
-.menu-section {
+.menu-section, 
+#menu-content {
 
     .well {
-        padding: 40px 0 90px;
+        //padding: 40px 0 90px;
+        padding: 30px 0;
+
+        h3 {
+            margin: 30px 0;
+        }
     }
 }
 
 .menu-item {
 
     h4 {
-        padding: 30px;
+        //padding: 30px;
+        padding: 15px;
         text-align: center;
-        border: 4px solid $primary-color;
+        border: 3px solid $primary-color;
         border-radius: 0px;
+        color: $primary-color;
 
         transition: all 0.2s;
 
