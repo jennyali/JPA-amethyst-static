@@ -2,3 +2,7 @@
 .panel {
     border: none;
 }
+
+.panel-default > .panel-heading {
+    border-bottom: 2px solid $primary-color;
+}

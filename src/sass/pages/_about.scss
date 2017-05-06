@@ -11,11 +11,7 @@
 
 //#     ABOUT CONTENT
 .about-content__wrapper {
-    display: block;
 
-    @include mediaQ--min($bp-sm) {
-        display: flex;
-    }
 }
 
 .about-content__wrapper__text {
@@ -30,10 +26,10 @@
 
 .about-content__wrapper__image {
     @extend %background-img-cover;
-    display: none;
+    min-height: 50rem;
 
         @include mediaQ--min($bp-sm) {
-            display: block;
+            //display: block;
         }
 }
 

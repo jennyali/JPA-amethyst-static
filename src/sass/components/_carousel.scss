@@ -18,8 +18,8 @@
         transform: translateY(-50%);
     }
 
-    h1 {
-        margin: 30px 0;
+    button {
+        margin-top: 30px;
     }
 
     .carousel-inner__text {
@@ -56,8 +56,8 @@
         transform: translateY(-50%);
     }
 
-    h1 {
-        margin: 30px 0;
+    button {
+        margin-top: 30px;
     }
 
     .carousel-inner__text {
@@ -142,3 +142,37 @@
         z-index: 2;
     }
 }
+
+
+//#    3 FONT STYLES FOR TITLE/ h1
+
+    .title-font--handwriting {
+        font-family: $hero-font-handwriting;
+        font-size: 18px;
+
+        @include mediaQ--min($bp-sm) {
+            font-size: 28px;
+        }
+    }
+
+    .title-font--bold-italic {
+        font-style: italic;
+        text-transform: none;
+        font-size: 16px;
+
+        @include mediaQ--min($bp-sm) {
+            font-size: 24px;
+        }
+    }
+
+    .title-font--bold,
+    .title-font--bold-italic {
+        font-family: $hero-font-bold;
+    }
+
+    .title-font--bold,
+    .title-font--bold-italic,
+    .title-font--handwriting {
+        text-align: center;
+        margin: 10px 0;
+    }

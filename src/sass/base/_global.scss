@@ -76,6 +76,7 @@ h5 {
     text-transform: uppercase;
     margin-bottom: 15px;
     letter-spacing: 2px;
+    position: relative;
 }
 
 h6 {
@@ -122,6 +123,9 @@ p.lead {
     }
 }
 
+a {
+    color: $primary-color;
+}
 
 .well {
     border: none;
@@ -141,4 +145,8 @@ p.lead {
 //-- smaller heighted hero images 
 .background-height-small{
     height: 360px;
+}
+
+.inline {
+    display: inline;
 }

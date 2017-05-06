@@ -5766,7 +5766,7 @@ button.close {
   background-size: cover;
   background-position: center; }
 
-.banner, .line-break-text h3, .selling-point h4, #contact-details span, #contact-details h6, #blog-content h3 {
+.banner, .line-break-text h3, .selling-point h4, #contact-details span, #contact-details h6, #blog-content h3, .location-content__details__title, .location-content__details__list {
   text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.8); }
 
 body {
@@ -5829,7 +5829,8 @@ h5 {
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 15px;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  position: relative; }
 
 h6 {
   font-weight: bold;
@@ -5865,6 +5866,9 @@ p.lead {
     p.lead {
       font-size: 18px; } }
 
+a {
+  color: #6C2487; }
+
 .well {
   border: none; }
 
@@ -5876,6 +5880,9 @@ p.lead {
 
 .background-height-small {
   height: 360px; }
+
+.inline, .nav > li > a.inline {
+  display: inline; }
 
 .navbar {
   border: none;
@@ -5950,7 +5957,8 @@ p.lead {
   color: #FFFFFF;
   background: #4c195f; }
 
-.nav-pills > li > a {
+.nav-pills > li > a,
+.nav a {
   border-radius: 0;
   color: #FFFFFF;
   text-transform: uppercase;
@@ -5958,7 +5966,8 @@ p.lead {
   letter-spacing: 1px;
   padding: 20px 0;
   font-size: 18px;
-  transition: background 0.5s ease-out; }
+  transition: background 0.5s ease-out;
+  background: none; }
 
 .nav > li > a:hover,
 .nav > li > a:focus {
@@ -5982,8 +5991,8 @@ p.lead {
   top: 50%;
   transform: translateY(-50%); }
 
-#hero-index-carousel h1 {
-  margin: 30px 0; }
+#hero-index-carousel button {
+  margin-top: 30px; }
 
 #hero-index-carousel .carousel-inner__text {
   position: absolute;
@@ -6008,8 +6017,8 @@ p.lead {
   top: 50%;
   transform: translateY(-50%); }
 
-#hero-menu-carousel h1 {
-  margin: 30px 0; }
+#hero-menu-carousel button {
+  margin-top: 30px; }
 
 #hero-menu-carousel .carousel-inner__text {
   position: absolute;
@@ -6060,6 +6069,31 @@ p.lead {
 
 .carousel-fade .carousel-control {
   z-index: 2; }
+
+.title-font--handwriting {
+  font-family: "Dancing Script", cursive;
+  font-size: 18px; }
+  @media (min-width: 767px) {
+    .title-font--handwriting {
+      font-size: 28px; } }
+
+.title-font--bold-italic {
+  font-style: italic;
+  text-transform: none;
+  font-size: 16px; }
+  @media (min-width: 767px) {
+    .title-font--bold-italic {
+      font-size: 24px; } }
+
+.title-font--bold,
+.title-font--bold-italic {
+  font-family: "Playfair Display", serif; }
+
+.title-font--bold,
+.title-font--bold-italic,
+.title-font--handwriting {
+  text-align: center;
+  margin: 10px 0; }
 
 .btn-lg, .btn-group-lg > .btn {
   padding: 15px 40px;
@@ -6298,11 +6332,11 @@ p.lead {
 .panel {
   border: none; }
 
+.panel-default > .panel-heading {
+  border-bottom: 2px solid #6C2487; }
+
 #intro {
   overflow: hidden; }
-  #intro .row {
-    display: -ms-flexbox;
-    display: flex; }
   #intro .well {
     margin-bottom: 0;
     border-radius: 0;
@@ -6436,10 +6470,8 @@ p.lead {
   padding: 0; }
 
 #map {
-  height: 200px; }
-  @media (min-width: 767px) {
-    #map {
-      min-height: 440px; } }
+  position: relative;
+  height: 50rem; }
 
 .location-section__text-wrapper {
   text-align: center; }
@@ -6661,13 +6693,6 @@ footer.well {
     .about-hero-img {
       height: 600px; } }
 
-.about-content__wrapper {
-  display: block; }
-  @media (min-width: 767px) {
-    .about-content__wrapper {
-      display: -ms-flexbox;
-      display: flex; } }
-
 .about-content__wrapper__text {
   text-align: center;
   padding: 60px; }
@@ -6676,10 +6701,7 @@ footer.well {
     margin: auto; }
 
 .about-content__wrapper__image {
-  display: none; }
-  @media (min-width: 767px) {
-    .about-content__wrapper__image {
-      display: block; } }
+  min-height: 50rem; }
 
 #testimonials {
   position: relative; }
@@ -6723,6 +6745,28 @@ footer.well {
   @media (min-width: 767px) {
     #location-hero-section {
       height: 600px; } }
+
+.location-content__details {
+  position: relative;
+  min-height: 50rem; }
+  .location-content__details span {
+    position: absolute;
+    left: -40px; }
+
+.location-content__details--align-left {
+  text-align: left; }
+
+.location-content__details__inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.location-content__details__list li {
+  font-size: 19px;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  padding: 5px; }
 
 .dark-theme {
   background: #222;
