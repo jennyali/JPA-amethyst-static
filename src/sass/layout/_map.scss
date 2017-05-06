@@ -1,10 +1,8 @@
 
 #map {
-    height: 200px;
+    position: relative;
+    height: 50rem;
 
-    @include mediaQ--min($bp-sm) {
-        min-height: 440px;
-    }
 }
 
 .location-section__text-wrapper {

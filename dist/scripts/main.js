@@ -50,10 +50,10 @@ $headerNavBtn.on({
     },
 
 // UNFOCUS the burger menu to toggle icon and dropdown class change.
-    'blur' : function() {
-        headerNavbarHandler(this);
-        burgerMenuRotateBars(this);
-    }
+    //'blur' : function() {
+        //headerNavbarHandler(this);
+        //burgerMenuRotateBars(this);
+    //}
 });
 
 
