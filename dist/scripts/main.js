@@ -23,6 +23,12 @@ $(document).ready(function() {
 
 //------- SELECTORS/VARIABLES ----------//
 
+// BODY
+var $body = $('body');
+
+// NAVBAR DROPDOWN
+var $navbarCollapse = $('.navbar-collapse');
+
 // HEADER DROPDOWN
 var $headerNavBtn = $('#header-burger-menu-btn');
 var $headerNavDropdown = $('#header-dropdown');
@@ -82,7 +88,10 @@ $excerptGalleryModalCancel.on({
 // Toggles class on dropdown menu in header.
 function headerNavbarHandler(selector) {
 
-    $headerNavDropdown.toggleClass('navbar-collapse--appear');
+    //$headerNavDropdown.toggleClass('navbar-collapse--appear');
+
+    $body.toggleClass('menu-open');
+    $navbarCollapse.toggleClass('open');
 }
 
 // Toggles class on burger menu icon in header.

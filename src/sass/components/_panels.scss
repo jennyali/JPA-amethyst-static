@@ -6,3 +6,24 @@
 .panel-default > .panel-heading {
     border-bottom: 2px solid $primary-color;
 }
+
+//# panel-square // panel-square__inner 
+
+.panel-square {
+    position: relative;
+    min-height: 50rem;
+}
+
+.panel-square__inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 30px;
+    //text-align: center;
+
+    h3 {
+        margin-top: 0;
+    }
+}
