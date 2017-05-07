@@ -5770,7 +5770,16 @@ button.close {
   text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.8); }
 
 body {
-  padding-top: 40px; }
+  position: relative;
+  padding-top: 40px;
+  width: 100%;
+  right: 0px;
+  transition: right 0.5s; }
+
+@media (max-width: 767px) {
+  body.menu-open {
+    right: 280px;
+    transition: right 0.5s; } }
 
 h1 {
   font-size: 18px;
@@ -5929,16 +5938,29 @@ a {
   float: none; }
 
 .navbar-collapse {
-  left: 0px;
-  transition: left 0.5s; }
+  position: relative;
+  transition: right 0.5s; }
   @media (max-width: 767px) {
     .navbar-collapse {
-      width: 300px;
-      position: absolute;
+      width: 280px;
       background: #222;
       display: block;
       margin: 0px;
-      left: -300px; } }
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      right: -280px;
+      padding: 15px;
+      overflow: auto;
+      box-shadow: inset 2px 0px 5px 0px rgba(0, 0, 0, 0.75); }
+      .navbar-collapse ul.nav {
+        padding: 15px 0;
+        border-top: 2px dotted white;
+        border-bottom: 2px dotted white; } }
+
+@media (max-width: 767px) {
+  .navbar-collapse.open {
+    right: 0; } }
 
 @media (max-width: 767px) {
   .container > .navbar-collapse {
@@ -5957,6 +5979,9 @@ a {
   color: #FFFFFF;
   background: #4c195f; }
 
+.inline, .nav > li > a.inline, .nav > li > a.inline {
+  display: inline-block; }
+
 .nav-pills > li > a,
 .nav a {
   border-radius: 0;
@@ -5968,6 +5993,10 @@ a {
   font-size: 18px;
   transition: background 0.5s ease-out;
   background: none; }
+  @media (max-width: 767px) {
+    .nav-pills > li > a,
+    .nav a {
+      padding: 10px; } }
 
 .nav > li > a:hover,
 .nav > li > a:focus {
@@ -6162,6 +6191,10 @@ a {
     border: 1px solid #4c195f;
     color: #FFFFFF; }
 
+#header-dropdown .caret-btn {
+  padding-left: 15px;
+  padding-right: 15px; }
+
 .parallax {
   background-attachment: fixed; }
 
@@ -6334,6 +6367,20 @@ a {
 
 .panel-default > .panel-heading {
   border-bottom: 2px solid #6C2487; }
+
+.panel-square {
+  position: relative;
+  min-height: 50rem; }
+
+.panel-square__inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 30px; }
+  .panel-square__inner h3 {
+    margin-top: 0; }
 
 #intro {
   overflow: hidden; }
@@ -6601,15 +6648,21 @@ footer.well {
       color: #6C2487;
       border: 3px solid #6C2487; }
 
-#site-logo {
-  background: #FFFFFF;
+@media (max-width: 767px) {
+  .site-header__social-links--navbar {
+    right: 0; }
+    .site-header__social-links--navbar li {
+      margin: 30px 0;
+      text-align: center; } }
+
+.site-logo, #site-logo {
   text-align: center;
   padding: 15px 0; }
-  #site-logo img {
+  .site-logo img, #site-logo img {
     width: 120px;
     margin: auto;
     display: inline; }
-  #site-logo p {
+  .site-logo p, #site-logo p {
     display: block;
     color: #6C2487;
     font-size: 48px;
@@ -6617,9 +6670,29 @@ footer.well {
     text-transform: uppercase;
     letter-spacing: 2px;
     line-height: 1.5; }
-  #site-logo p.small {
+  .site-logo p.small, #site-logo p.small {
     line-height: 2.5;
     font-size: 30px; }
+
+@media (min-width: 767px) {
+  #header-navbar-dropdown {
+    position: absolute;
+    background: #222;
+    padding: 10px 15px; }
+    #header-navbar-dropdown a {
+      font-size: 16px; } }
+
+#header-navbar-dropdown li {
+  margin: 10px 0;
+  padding: 10px 0;
+  transition: background 0.5s ease-out; }
+
+#header-navbar-dropdown a:hover {
+  text-decoration: none; }
+
+#header-navbar-dropdown li:hover {
+  text-decoration: none;
+  background-color: #6C2487; }
 
 .menu-section .well,
 #menu-content .well {
@@ -6694,8 +6767,7 @@ footer.well {
       height: 600px; } }
 
 .about-content__wrapper__text {
-  text-align: center;
-  padding: 60px; }
+  text-align: center; }
   .about-content__wrapper__text p {
     max-width: 600px;
     margin: auto; }
@@ -6749,12 +6821,12 @@ footer.well {
 .location-content__details {
   position: relative;
   min-height: 50rem; }
-  .location-content__details span {
-    position: absolute;
-    left: -40px; }
 
 .location-content__details--align-left {
   text-align: left; }
+  .location-content__details--align-left span {
+    position: absolute;
+    left: -40px; }
 
 .location-content__details__inner {
   position: absolute;

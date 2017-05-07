@@ -17,14 +17,15 @@
     position: relative;
     min-height: 50rem;
 
-    span {
-        position: absolute;
-        left: -40px;
-    }
 }
 
 .location-content__details--align-left {
     text-align: left;
+
+    span {
+        position: absolute;
+        left: -40px;
+    }
 }
 
 .location-content__details__inner {

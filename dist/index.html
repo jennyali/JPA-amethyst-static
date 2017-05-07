@@ -47,7 +47,7 @@
                 </ul>
             </div><!-- .site-header__social-links -->
 
-            <div id="site-logo" class="container-fluid">
+            <div class="container-fluid hidden-xs site-logo">
                 <a href="index.html">
                     <img class="img-responsive" src="./images/elephant-drawn.png" alt="Amethyst logo">
                 </a>
@@ -71,13 +71,23 @@
                     </div> <!-- navbar-header -->
 
                     <div id="header-dropdown" class="navbar-collapse collapse">
+                        
+                        <div class="site-logo visible-xs">
+                            <a href="index.html">
+                                <img class="img-responsive" src="./images/elephant-drawn.png" alt="Amethyst logo">
+                            </a>
+                            <h1 class="bold primary-color">Amethyst</h1>
+                        </div><!-- #site-logo -->
+                                   
                         <ul class="nav nav-pills nav-justified">
                             <li class="active"><a href="index.html">Home</a></li>
-                            <li class="dropdown text-center">
+                            <li class="text-center">
                                 <a class="inline" href="menu.html">Menu</a>
-                                <a class="inline dropdown-toggle" data-toggle="dropdown">
-                                <span class="caret"></span></a>
-                                <ul class="dropdown-menu">
+                                
+                                <a class="inline caret-btn" data-toggle="collapse" data-target="#header-navbar-dropdown">
+                                    <span class="caret"></span>
+                                </a>
+                                <ul id="header-navbar-dropdown" class="list-unstyled collapse">
                                     <li><a href="menu-category.html">Lunch</a></li>
                                     <li><a href="menu-category.html">Breakfast</a></li>
                                     <li><a href="menu-category.html">Dinner</a></li>
@@ -89,6 +99,21 @@
                             <li><a href="contact.html">Contact</a></li>
                             <li><a href="location.html">Find Us</a></li>
                         </ul>
+
+                        <div class="site-header__social-links--invert site-header__social-links--navbar visible-xs">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <span class="icon-twitter"></span>
+                                </li>
+                                <li>
+                                    <span class="icon-facebook"></span>
+                                </li>
+                                <li>
+                                    <span class="icon-google-plus"></span>
+                                </li>
+                            </ul>
+                        </div><!-- .site-header__social-links -->
+
                     </div><!-- navbar-collapse -->   
 
                 </div><!-- navbar-wrapper -->
@@ -186,13 +211,15 @@
 
             <div class="row about-content__wrapper">
 
-                <div class="col-sm-6 about-content__wrapper__text">
-                    <h3>About Us</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tincidunt non ligula quis dictum. 
-                        Phasellus dignissim mollis facilisis. Morbi ac ipsum justo. Pellentesque habitant morbi tristique 
-                        senectus et netus et malesuada fames ac turpis egestas.
-                    </p>
+                <div class="col-sm-6 panel-square">
+                    <div class="panel-square__inner">
+                        <h3>Untitled</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tincidunt non ligula quis dictum. 
+                            Phasellus dignissim mollis facilisis. Morbi ac ipsum justo. Pellentesque habitant morbi tristique 
+                            senectus et netus et malesuada fames ac turpis egestas.
+                        </p>
+                    </div>
                 </div><!-- about-content__wrapper__text -->
 
                 <div class="col-sm-6 about-content__wrapper__image" style="background-image: url('./images/elephant-under-view.jpg');">
@@ -202,13 +229,15 @@
 
             <div class="row about-content__wrapper">
 
-                <div class="col-sm-6 col-sm-push-6 about-content__wrapper__text dark-theme">
-                    <h3>About Us</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tincidunt non ligula quis dictum. 
-                        Phasellus dignissim mollis facilisis. Morbi ac ipsum justo. Pellentesque habitant morbi tristique 
-                        senectus et netus et malesuada fames ac turpis egestas.
-                    </p>
+                <div class="col-sm-6 col-sm-push-6 dark-theme panel-square">
+                    <div class="panel-square__inner">
+                        <h3>Untitled</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tincidunt non ligula quis dictum. 
+                            Phasellus dignissim mollis facilisis. Morbi ac ipsum justo. Pellentesque habitant morbi tristique 
+                            senectus et netus et malesuada fames ac turpis egestas.
+                        </p>
+                    </div>
                 </div><!-- about-content__wrapper__text -->
 
                 <div class="col-sm-6 col-sm-pull-6 about-content__wrapper__image" style="background-image: url('./images/elephant-under-view.jpg');">

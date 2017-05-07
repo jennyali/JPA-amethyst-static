@@ -1,7 +1,19 @@
 
 
 body {
+    position: relative;
     padding-top: 40px;
+    width: 100%;
+    right: 0px;
+    transition: right 0.5s;
+}
+
+body.menu-open {
+
+    @include mediaQ--max($bp-sm) {
+        right: 280px;
+        transition: right 0.5s;
+    }
 }
 
 h1 {
