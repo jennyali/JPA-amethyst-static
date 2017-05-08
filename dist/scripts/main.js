@@ -36,6 +36,7 @@ var $headerNavDropdown = $('#header-dropdown');
 // HEADER BURGER MENU
 var $burgerMenuTopBar = $('.navbar-toggle .icon-bar-top');
 var $burgerMenuBottomBar =$('.navbar-toggle .icon-bar-bottom');
+var $burgerMenuMidBar = $('.navbar-toggle .icon-bar-mid');
 
 // EXCERPT GALLERY MODAL
 var $excerptGalleryModal = $('#excerpt-gallery-modal');
@@ -99,6 +100,7 @@ function burgerMenuRotateBars(selector) {
 
     $burgerMenuTopBar.toggleClass('icon-bar-top--rotate');
     $burgerMenuBottomBar.toggleClass('icon-bar-bottom--rotate');
+    $burgerMenuMidBar.toggleClass('icon-bar-mid--fade');
 }
 
 function excerptModalShowHandler(selector) {

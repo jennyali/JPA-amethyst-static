@@ -5929,9 +5929,7 @@ a {
   background-color: #222; }
   @media (max-width: 767px) {
     .navbar-inverse {
-      background: #FFFFFF; }
-      .navbar-inverse .navbar-toggle {
-        border-color: #FFFFFF; } }
+      background: #FFFFFF; } }
 
 @media (max-width: 767px) {
   .navbar-inverse .navbar-toggle .icon-bar {
@@ -6012,6 +6010,10 @@ a {
   width: 100%;
   z-index: 2;
   top: 0px; }
+
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+  background-color: transparent; }
 
 #hero-index-carousel .item {
   height: 300px;
@@ -6196,9 +6198,10 @@ a {
     border: 1px solid #4c195f;
     color: #FFFFFF; }
 
-#header-dropdown .caret-btn {
-  padding-left: 15px;
-  padding-right: 15px; }
+.btn-burger-menu {
+  border-radius: 50%;
+  padding: 13px 10px;
+  border: 3px solid #222; }
 
 .parallax {
   background-attachment: fixed; }
@@ -6242,24 +6245,31 @@ a {
   box-shadow: inset 0 1px 1px rgba(108, 36, 135, 0.075), 0 0 8px rgba(108, 36, 135, 0.6); }
 
 .navbar-toggle .icon-bar-top {
+  position: relative;
+  top: 0;
   transition: all 0.5s; }
 
 .navbar-toggle .icon-bar-bottom {
+  position: relative;
+  top: 0;
+  transition: all 0.5s; }
+
+.navbar-toggle .icon-bar-mid {
+  opacity: 1;
   transition: all 0.5s; }
 
 .navbar-toggle .icon-bar-top--rotate {
-  transform: rotate(-27deg);
-  width: 60%;
-  position: relative;
-  top: 1px;
+  transform: rotate(-45deg);
+  top: 8px;
   transition: all 0.5s; }
 
 .navbar-toggle .icon-bar-bottom--rotate {
-  transform: rotate(27deg);
-  width: 60%;
-  position: relative;
-  top: -1px;
+  transform: rotate(45deg);
+  top: -8px;
   transition: all 0.5s; }
+
+.navbar-toggle .icon-bar-mid--fade {
+  opacity: 0; }
 
 .excerpt-gallery-modal {
   position: fixed;
@@ -6574,43 +6584,22 @@ footer.well {
 .footer__copyright {
   padding: 15px 0; }
 
-#intro.in-view h3 {
-  opacity: 1;
+#intro .panel-square__inner {
+  opacity: 0;
+  transition: opacity 0.5s 0.2s; }
+
+#intro.in-view .panel-square__inner {
+  opacity: 1; }
+
+.menu-section #menu-categories {
+  position: relative;
+  top: 40px;
+  opacity: 0;
+  transition: all 0.5s 0.2s; }
+
+.menu-section.in-view #menu-categories {
   top: 0;
-  transition: all 0.5s 0.4s; }
-
-#intro.in-view p.lead {
-  opacity: 1;
-  top: 0;
-  transition: all 0.5s 0.5s; }
-
-#intro.in-view p {
-  opacity: 1;
-  top: 0;
-  transition: all 0.5s 0.6s; }
-
-#intro.in-view button {
-  opacity: 1;
-  top: 0;
-  transition: all 0.5s 0.7s; }
-
-#intro.in-view .well {
-  opacity: 1;
-  transition: all 0.5s; }
-
-#intro.in-view .intro-img {
-  opacity: 1;
-  transition: all 0.5s; }
-
-#food-ad.in-view h2 {
-  right: 0px;
-  opacity: 1;
-  transition: all 0.5s 0.5s; }
-
-#selling-pts.in-view .selling-point {
-  opacity: 1;
-  top: 0;
-  transition: all 0.5s 0.5s; }
+  opacity: 1; }
 
 .site-header {
   position: relative; }
@@ -6710,17 +6699,56 @@ footer.well {
   #menu-content .well h3 {
     margin: 30px 0; }
 
-.menu-item h4 {
-  padding: 15px;
-  text-align: center;
+.menu-item a {
+  position: relative;
+  height: 8rem;
   border: 3px solid #6C2487;
+  display: block;
+  margin: 2rem 0;
+  transition: all 0.2s; }
+  @media (min-width: 767px) {
+    .menu-item a {
+      height: 12rem; } }
+  .menu-item a:hover, .menu-item a:focus {
+    background: #6C2487;
+    cursor: pointer; }
+    .menu-item a:hover h4, .menu-item a:focus h4 {
+      color: #FFFFFF; }
+
+.menu-item h4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
   border-radius: 0px;
   color: #6C2487;
-  transition: all 0.2s; }
-  .menu-item h4:hover, .menu-item h4:focus {
-    background: #6C2487;
-    color: #FFFFFF;
-    cursor: pointer; }
+  margin: 0;
+  padding: 0 10px; }
+
+.menu-category__title {
+  color: #6C2487;
+  font-weight: bold; }
+
+.menu-sub-category {
+  margin-bottom: 60px; }
+
+.menu-sub-category__title {
+  color: #6C2487; }
+
+.menu-item__title {
+  display: inline-block; }
+
+.menu-item__icons {
+  display: inline-block;
+  margin-left: 5px; }
+
+.menu-item__content {
+  font-style: italic; }
+
+.menu-wrapper {
+  padding-bottom: 30px; }
 
 #contact-details span {
   font-size: 50px;
