@@ -5893,6 +5893,11 @@ a {
 .inline, .nav > li > a.inline {
   display: inline; }
 
+.bg-img-cover {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
 .navbar {
   border: none;
   margin: 0;
@@ -6376,11 +6381,15 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  padding: 30px; }
+  transform: translate(-50%, -50%); }
   .panel-square__inner h3 {
     margin-top: 0; }
+
+.panel-square__inner--text-center {
+  width: 100%;
+  max-width: 60rem;
+  padding: 60px;
+  text-align: center; }
 
 #intro {
   overflow: hidden; }

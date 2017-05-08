@@ -162,3 +162,9 @@ a {
 .inline {
     display: inline;
 }
+
+.bg-img-cover {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
