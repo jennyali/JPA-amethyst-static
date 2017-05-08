@@ -16,20 +16,69 @@
 
 .menu-item {
 
-    h4 {
-        //padding: 30px;
-        padding: 15px;
-        text-align: center;
+    a {
+        position: relative;
+        height: 8rem;
         border: 3px solid $primary-color;
-        border-radius: 0px;
-        color: $primary-color;
-
+        display: block;
+        margin: 2rem 0;
         transition: all 0.2s;
 
-        &:hover, &:focus {
-            background: $primary-color;
-            color: $light;
-            cursor: pointer;
+            @include mediaQ--min($bp-sm) {
+                height: 12rem;
+            }
+
+            &:hover, &:focus {
+                background: $primary-color;
+                cursor: pointer;
+
+                h4 {
+                    color: $light;
+                }
         }
     }
+
+    h4 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+        border-radius: 0px;
+        color: $primary-color;
+        margin: 0;
+        padding: 0 10px;
+    }
+}
+
+.menu-category__title {
+    color: $primary-color;
+    font-weight: bold;
+}
+
+//# .row IN MENU CATEGORY PAGE
+.menu-sub-category {
+    margin-bottom: 60px;
+}
+
+.menu-sub-category__title {
+    color: $primary-color;
+}
+
+.menu-item__title {
+    display: inline-block;
+}
+
+.menu-item__icons {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.menu-item__content {
+    font-style: italic;
+}
+
+.menu-wrapper {
+    padding-bottom: 30px;
 }
