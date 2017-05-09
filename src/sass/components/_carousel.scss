@@ -1,87 +1,28 @@
 
-// Carousel in Hero section of Front-page.
-
+// front-page hero carousel
 #hero-index-carousel {
-
-    .item {
-       height: 300px;
-       overflow: hidden;
-
-        @include mediaQ--min($bp-sm){
-            height: 600px;
-        }
-    }
-
-    img {
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-
-    button {
-        margin-top: 30px;
-    }
-
-    .carousel-inner__text {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 100%;
-    }
-
-    //# indicators
-    .carousel-indicators li {
-        width: 20px;
-        height: 20px;
-        margin: 5px;
-    }
+    @extend %img-title-carousel;
 }
 
-// MENU TOP PAGE CAROUSEL.
-
+// menu-category-page carousel
 #hero-menu-carousel {
-
-    .item {
-       height: 300px;
-       overflow: hidden;
-
-        @include mediaQ--min($bp-sm){
-            height: 600px;
-        }
-    }
-
-    img {
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-
-    button {
-        margin-top: 30px;
-    }
-
-    .carousel-inner__text {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 100%;
-    }
-
+    @extend %img-title-carousel;
 }
 
+// about-page carousel
 #testimonials__carousel {
     height: 100%;
-    padding-bottom: 60px;
+    padding-bottom: $spacing-triple;
 
     .carousel-inner {
-        margin: 30px 0;
+        margin: $spacing-double 0;
         color: $light;
         max-width: 1200px;
         margin: auto;
     }
 
     .item {
-        padding: 30px;
+        padding: $spacing-double;
     }
 
     .carousel-indicators {
@@ -98,19 +39,39 @@
     }
 }
 
-.carousel-inner {
-    
-    &:hover {
+// 3 title fonts for within .item  
+.title-font--handwriting {
+    font-family: $hero-font-handwriting;
+    font-size: $font-size-md;
 
-        .carousel-control {
-            opacity: 1;
-        }
+        @include mediaQ--min($bp-sm) {
+            font-size: $font-size-xlg;
     }
 }
 
+.title-font--bold-italic {
+    font-style: italic;
+    text-transform: none;
+    font-size: $font-size-base;
+
+    @include mediaQ--min($bp-sm) {
+            font-size: $font-size-xlg;
+    }
+}
+
+.title-font--bold,
+.title-font--bold-italic {
+    font-family: $hero-font-bold;
+}
+
+.title-font--bold,
+.title-font--bold-italic,
+.title-font--handwriting {
+    text-align: center;
+    margin: $spacing-sm 0;
+}
 
 //==== FADE CAROUSEL CODE ====//
-
 .carousel-fade {
     .carousel-inner {
         .item {
@@ -142,37 +103,3 @@
         z-index: 2;
     }
 }
-
-
-//#    3 FONT STYLES FOR TITLE/ h1
-
-    .title-font--handwriting {
-        font-family: $hero-font-handwriting;
-        font-size: 18px;
-
-        @include mediaQ--min($bp-sm) {
-            font-size: 28px;
-        }
-    }
-
-    .title-font--bold-italic {
-        font-style: italic;
-        text-transform: none;
-        font-size: 16px;
-
-        @include mediaQ--min($bp-sm) {
-            font-size: 24px;
-        }
-    }
-
-    .title-font--bold,
-    .title-font--bold-italic {
-        font-family: $hero-font-bold;
-    }
-
-    .title-font--bold,
-    .title-font--bold-italic,
-    .title-font--handwriting {
-        text-align: center;
-        margin: 10px 0;
-    }

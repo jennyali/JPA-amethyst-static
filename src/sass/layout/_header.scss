@@ -18,15 +18,15 @@
     span {
         background: $light;
         color: $dark;
-        padding: 10px 10px 5px;
+        padding: $spacing-sm $spacing-sm $spacing-xs;
         border-radius: 50%;
-        font-size: 27px;
-        border: 3px solid $dark;
+        font-size: $font-size-xlg;
+        border: $border-size-lg solid $dark;
         transition: all 0.2s;
 
         &:hover {
             color: $primary-color;
-            border: 3px solid $primary-color;
+            border: $border-size-lg solid $primary-color;
         }
     }
 }
@@ -37,23 +37,23 @@
 
     @include mediaQ--max($bp-sm) {
         position: relative;
-        margin: 45px 0 0;
+        margin: ($spacing-default * 3) 0 0;
     }
 
     span {
         background: $dark;
         color: $light;
-        padding: 10px 10px 5px;
+        padding: $spacing-sm $spacing-sm $spacing-xs;
         border-radius: 50%;
-        font-size: 27px;
-        border: 3px solid $light;
+        font-size: $font-size-xlg;
+        border: $border-size-lg solid $light;
         transition: all 0.2s;
         cursor: pointer;
         position: relative;
 
         &:hover {
             color: $primary-color;
-            border: 3px solid $primary-color;
+            border: $border-size-lg solid $primary-color;
         }
     }
 }
@@ -63,17 +63,15 @@
         right: 0;
 
         li {
-            margin: 30px 0;
+            margin: $spacing-double 0;
             text-align: center;
         }
     }
 }
 
 .site-logo, #site-logo {
-    //background: $light;
     text-align: center;
-    padding: 15px 0;
-
+    padding: $spacing-default 0;
 
     img {
         width: 120px;
@@ -84,7 +82,7 @@
     p {
         display: block;
         color: $primary-color;
-        font-size: 48px;
+        font-size: $font-size-xxxlg;
         font-weight: bold;
         text-transform: uppercase;
         letter-spacing: 2px;
@@ -93,7 +91,7 @@
 
     p.small {
         line-height: 2.5;
-        font-size: 30px;
+        font-size: $font-size-xxlg;
     }
 }
 
@@ -102,16 +100,16 @@
     @include mediaQ--min($bp-sm) {
         position: absolute;
         background: $dark;
-        padding: 10px 15px;
+        padding: $spacing-sm $spacing-default;
 
         a {
-            font-size: 16px;
+            font-size: $font-size-base;
         }
     }
 
     li {
-        margin: 10px 0;
-        padding: 10px 0;
+        margin: $spacing-sm 0;
+        padding: $spacing-sm 0;
         transition: background 0.5s ease-out;
     }
 

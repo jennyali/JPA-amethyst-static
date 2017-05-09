@@ -2,55 +2,45 @@
 
 body {
     position: relative;
-    padding-top: 40px;
+    padding-top: ($spacing-lg * 2);
     width: 100%;
-    right: 0px;
+    right: 0;
     transition: right 0.5s;
 }
 
 body.menu-open {
 
     @include mediaQ--max($bp-sm) {
-        right: 240px;
+        right: $vertical-navbar-width;
         transition: right 0.5s;
     }
 }
 
+//#--   TYPOGRAPHY  --//
+
 h1 {
-    font-size: 18px;
+    font-size: $font-size-xlg;
     text-transform: uppercase;
     font-weight: bold;
     
-    @include mediaQ--min($bp-xs){
-        font-size: 28px;
-
         @include mediaQ--min($bp-sm) {
-            font-size: 42px;
+            font-size: $font-size-xxlg;
 
             @include mediaQ--min($bp-md) {
-                font-size: 48px;
+                font-size: $font-size-xxxlg;
             }
         }
-    }
-}
-
-.primary-color {
-    color: $primary-color;
-}
-
-.bold {
-    font-weight: bold;
 }
 
 h2 {
     font-weight: bold;
     color: white;
     text-transform: uppercase;
-    padding: 90px 0;
+    padding: ($spacing-double * 3) 0;
 
     @include mediaQ--max($bp-sm) {
-        font-size: 20px;
-        padding: 30px 0;
+        font-size: $font-size-lg;
+        padding: $spacing-double 0;
 
     }
 }
@@ -58,15 +48,15 @@ h2 {
 h3 {
     letter-spacing: 1px;
     text-transform: uppercase;
-    font-size: 24px;
-    margin: 30px 0 30px;
+    font-size: $font-size-xlg;
+    margin: $spacing-double 0 $spacing-double;
 
     @include mediaQ--min($bp-xs) {
-        font-size: 28px;
+        font-size: $font-size-xlg;
         
         @include mediaQ--min($bp-sm) {
-            margin: 80px 0 30px;
-            font-size: 36px;
+            margin: ($spacing-lg * 4) 0 $spacing-double;
+            font-size: $font-size-xxlg;
         }
     }
 }
@@ -74,19 +64,19 @@ h3 {
 h4 {
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 28px;
+    font-size: $font-size-xlg;
 }
 
 h4.small-size {
     font-weight: normal;
-    font-size: 24px;
+    font-size: $font-size-xlg;
 }
 
 h5 {
-    font-size: 24px;
+    font-size: $font-size-xlg;
     font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 15px;
+    margin-bottom: $spacing-default;
     letter-spacing: 2px;
     position: relative;
 }
@@ -94,10 +84,10 @@ h5 {
 h6 {
     font-weight: bold;
     letter-spacing: 2px;
-    font-size: 40px;
+    font-size: $font-size-xxxlg;
 
     @include mediaQ--min($bp-md) {
-        font-size: 56px;
+        font-size: $font-size-huge;
     }
 }
 
@@ -112,26 +102,26 @@ hr {
 hr.sm-width {
     border-top: 3px solid black;
     width: 40px;
-    margin-top: 15px;
+    margin-top: $spacing-default;
 }
 
 p {
     font-family: $font-family-paragraph;
     line-height: 24px;
-    font-size: 14px;
+    font-size: $font-size-sm;
 
     @include mediaQ--min($bp-md) {
-        font-size: 16px;
+        font-size: $font-size-base;
     }
 }
 
 p.lead {
-    font-size: 14px;
+    font-size: $font-size-sm;
     //text-transform: uppercase;
     line-height: 1.5;
 
     @include mediaQ--min($bp-md) {
-        font-size: 18px;
+        font-size: $font-size-md;
     }
 }
 
@@ -139,8 +129,19 @@ a {
     color: $primary-color;
 }
 
+//#-- END --#//
+
+
 .well {
     border: none;
+}
+
+.primary-color {
+    color: $primary-color;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 // -- .fill-screen uses jquery to size div height to screen height -- //

@@ -1,15 +1,13 @@
 
 //# .menu-section div
 
-.menu-section, 
-#menu-content {
+.menu-section {
 
     .well {
-        //padding: 40px 0 90px;
-        padding: 30px 0;
+        padding: $spacing-default 0;
 
         h3 {
-            margin: 30px 0;
+            margin: $spacing-double 0;
         }
     }
 }
@@ -48,37 +46,7 @@
         border-radius: 0px;
         color: $primary-color;
         margin: 0;
-        padding: 0 10px;
+        padding: 0 $spacing-sm;
     }
 }
 
-.menu-category__title {
-    color: $primary-color;
-    font-weight: bold;
-}
-
-//# .row IN MENU CATEGORY PAGE
-.menu-sub-category {
-    margin-bottom: 60px;
-}
-
-.menu-sub-category__title {
-    color: $primary-color;
-}
-
-.menu-item__title {
-    display: inline-block;
-}
-
-.menu-item__icons {
-    display: inline-block;
-    margin-left: 5px;
-}
-
-.menu-item__content {
-    font-style: italic;
-}
-
-.menu-wrapper {
-    padding-bottom: 30px;
-}
