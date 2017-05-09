@@ -48,21 +48,22 @@ var $excerptGalleryThumbnail = $('.gallery-excerpt__thumbnail');
 
 //------ EVENTS ----------//
 
+
 $headerNavBtn.on({
 // CLICK the burger menu to toggle icon and dropdown class change.
 
-    'click' : function() {
+    'click' : function(event) {
+
         headerNavbarHandler(this);
         burgerMenuRotateBars(this);
     },
 
-// UNFOCUS the burger menu to toggle icon and dropdown class change.
-    //'blur' : function() {
-        //headerNavbarHandler(this);
-        //burgerMenuRotateBars(this);
-    //}
-});
+    'touchstart' : function(event) {
 
+        headerNavbarHandler(this);
+        burgerMenuRotateBars(this);
+    }
+});
 
 $excerptGalleryThumbnail.on({
 
@@ -124,6 +125,19 @@ function excerptModalCancelHandler(selector) {
 
 =============================*/
 
+// --------     IE FIX FOR JITTER PARALLAX BACKGROUNDS      -----//
+
+if(navigator.userAgent.match(/Trident\/7\./)) { // if IE
+        $('body').on("mousewheel", function () {
+            // remove default behavior
+            event.preventDefault(); 
+
+            //scroll without smoothing
+            var wheelDelta = event.wheelDelta;
+            var currentScrollPosition = window.pageYOffset;
+            window.scrollTo(0, currentScrollPosition - wheelDelta);
+        });
+}
 
 // --------     PARALLAX SLIGHT SCROLL UP EFFECT    --------//
 
@@ -172,9 +186,10 @@ function check_if_in_view(){
 
         if ((element_bottom_position >= window_top_position) && (element_top_position <= window_bottom_position)){
             $element.addClass('in-view');
-        } else {
+        } 
+        /*else {
             $element.removeClass('in-view');
-        }
+        }*/
     });
 }
 
