@@ -5769,6 +5769,25 @@ button.close {
 .banner, .line-break-text h3, .selling-point h4, #contact-details span, #contact-details h6, #blog-content h3, .location-content__details__title, .location-content__details__list {
   text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.8); }
 
+/* 
+    for md+ screen sizes.
+    used on elements with 'data-scroll='in-view-animation'' attr.
+*/
+@media screen and (min-width: 1200px) {
+  #intro .panel-square__inner {
+    opacity: 0;
+    transition: opacity 0.5s 0.2s; }
+  #intro.in-view .panel-square__inner {
+    opacity: 1; }
+  .menu-section #menu-categories {
+    position: relative;
+    top: 40px;
+    opacity: 0;
+    transition: all 0.5s 0.2s; }
+  .menu-section.in-view #menu-categories {
+    top: 0;
+    opacity: 1; } }
+
 body {
   position: relative;
   padding-top: 40px;
@@ -5778,7 +5797,7 @@ body {
 
 @media (max-width: 767px) {
   body.menu-open {
-    right: 280px;
+    right: 240px;
     transition: right 0.5s; } }
 
 h1 {
@@ -5945,14 +5964,14 @@ a {
   transition: right 0.5s; }
   @media (max-width: 767px) {
     .navbar-collapse {
-      width: 280px;
+      width: 240px;
       background: #222;
       display: block;
       margin: 0px;
       position: fixed;
       top: 0;
       bottom: 0;
-      right: -280px;
+      right: -240px;
       padding: 15px;
       overflow: auto;
       box-shadow: inset 2px 0px 5px 0px rgba(0, 0, 0, 0.75); }
@@ -6202,9 +6221,6 @@ a {
   border-radius: 50%;
   padding: 13px 10px;
   border: 3px solid #222; }
-
-.parallax {
-  background-attachment: fixed; }
 
 @media (max-width: 420px) {
   .input-group--curved {
@@ -6583,23 +6599,6 @@ footer.well {
 
 .footer__copyright {
   padding: 15px 0; }
-
-#intro .panel-square__inner {
-  opacity: 0;
-  transition: opacity 0.5s 0.2s; }
-
-#intro.in-view .panel-square__inner {
-  opacity: 1; }
-
-.menu-section #menu-categories {
-  position: relative;
-  top: 40px;
-  opacity: 0;
-  transition: all 0.5s 0.2s; }
-
-.menu-section.in-view #menu-categories {
-  top: 0;
-  opacity: 1; }
 
 .site-header {
   position: relative; }

@@ -11,7 +11,7 @@ body {
 body.menu-open {
 
     @include mediaQ--max($bp-sm) {
-        right: 280px;
+        right: 240px;
         transition: right 0.5s;
     }
 }

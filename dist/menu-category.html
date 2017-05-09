@@ -8,6 +8,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Stop IE turning number strings into phone links -->
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500,700|Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Playfair+Display:700,700i" rel="stylesheet">
+
     <link href="../node_modules/normalize.css" rel="text/html" type="text/css">
     <link href="https://file.myfontastic.com/ncjQH3qL3iqtxPyrLNBQDo/icons.css" rel="stylesheet">
 
@@ -43,7 +50,7 @@
                 </ul>
             </div><!-- .site-header__social-links -->
 
-            <div id="site-logo" class="container-fluid">
+            <div class="container-fluid hidden-xs site-logo">
                 <a href="index.html">
                     <img class="img-responsive" src="./images/elephant-drawn.png" alt="Amethyst logo">
                 </a>
@@ -57,7 +64,7 @@
                         <h1 class="bold primary-color">Amethyst</h1>
 
                          <!-- creates a burger-menu for small screen, dissappears on big screen -->
-                        <button type="button" class="navbar-toggle" id="header-burger-menu-btn">
+                        <button class="navbar-toggle btn-burger-menu" id="header-burger-menu-btn">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar icon-bar-top"></span>
                             <span class="icon-bar icon-bar-mid"></span>
@@ -67,13 +74,37 @@
                     </div> <!-- navbar-header -->
 
                     <div id="header-dropdown" class="navbar-collapse collapse">
+                        
+                        <div class="site-logo visible-xs">
+                            <a href="index.html">
+                                <img class="img-responsive" src="./images/elephant-drawn.png" alt="Amethyst logo">
+                            </a>
+                            <h1 class="bold primary-color">Amethyst</h1>
+                        </div><!-- #site-logo -->
+                                   
                         <ul class="nav nav-pills nav-justified">
                             <li class="active"><a href="index.html">Home</a></li>
                             <li><a href="menu.html">Menu</a></li>
                             <li><a href="news.html">News</a></li>
                             <li><a href="about.html">About Us</a></li>
                             <li><a href="contact.html">Contact</a></li>
-                        </ul>
+                            <li><a href="location.html">Find Us</a></li>
+                        </ul><!-- .nav -->
+
+                        <div class="site-header__social-links--invert site-header__social-links--navbar visible-xs">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <span class="icon-twitter"></span>
+                                </li>
+                                <li>
+                                    <span class="icon-facebook"></span>
+                                </li>
+                                <li>
+                                    <span class="icon-google-plus"></span>
+                                </li>
+                            </ul>
+                        </div><!-- .site-header__social-links -->
+
                     </div><!-- navbar-collapse -->   
 
                 </div><!-- navbar-wrapper -->
