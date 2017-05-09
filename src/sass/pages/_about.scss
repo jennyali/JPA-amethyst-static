@@ -1,7 +1,6 @@
 
 //#     HERO SECTION
 .about-hero-img {
-    @extend %background-img-cover; 
     height: 400px;
 
     @include mediaQ--min($bp-sm) {
@@ -16,7 +15,6 @@
 
 .about-content__wrapper__text {
     text-align: center;
-    //padding: 60px;
 
     p {
         max-width: 600px;
@@ -25,18 +23,11 @@
 }
 
 .about-content__wrapper__image {
-    @extend %background-img-cover;
-    min-height: 50rem;
-
-        @include mediaQ--min($bp-sm) {
-            //display: block;
-        }
+    min-height: $panel-square-min-height;
 }
 
 //#     TESTIMONIALS
 #testimonials {
-    @extend %background-img-cover;
-    //padding-bottom: 60px;
     position: relative;
 }
 
@@ -44,31 +35,31 @@
     position: relative;
     z-index: 3;
     background: $primary-color;
-    padding: 30px 0 90px;
+    padding: $spacing-double 0 ($spacing-double * 3);
 
 }
 
 .testimonials__quote-icon {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: ($spacing-lg * 2);
 
     span {
         background: $light;
         color: $primary-color;
         font-size: 50px;
-        padding: 25px 28px 15px;
+        padding: $quote-icon-padding;
         border-radius: 100%;
     }
 }
 
 .testimonials__content {
-    font-size: 18px;
+    font-size: $font-size-md;
     letter-spacing: 1px;
     line-height: 1.5;
 }
 
 .testimonials__backquote {
     font-style: italic;
-    font-size: 16px;
+    font-size: $font-size-base;
     letter-spacing: 1px;
 }

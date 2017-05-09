@@ -28,14 +28,13 @@
 }
 
 .navbar-brand {
-    padding: $mp-sm $mp-default;
+    padding: $spacing-sm $spacing-default;
     padding-left: 0;
-
 
     img {
         max-width: 40px;
         display: inline;
-        margin: 0 $mp-sm;
+        margin: 0 $spacing-sm;
     }
 }
 
@@ -60,24 +59,19 @@
 }
 
 .navbar-collapse {
-    //left: 0px;
-    //transition: left 0.5s;
     position: relative;
     transition: right 0.5s;
     
-
     @include mediaQ--max($bp-sm) {
-        width: 240px;
-        //position: absolute;
-        background: #222;
+        width: $vertical-navbar-width;
+        background: $dark;
         display: block;
         margin: 0px;
-        //left: -300px;
         position: fixed;
         top: 0;
         bottom: 0;
-        right: -240px;
-        padding: 15px;
+        right: -$vertical-navbar-width;
+        padding: $spacing-default;
         overflow: auto;
 
         -webkit-box-shadow: inset 2px 0px 5px 0px rgba(0,0,0,0.75);
@@ -85,9 +79,9 @@
         box-shadow: inset 2px 0px 5px 0px rgba(0,0,0,0.75);
 
         ul.nav {
-            padding: 15px 0;
-            border-top: 2px dotted white;
-            border-bottom: 2px dotted white;
+            padding: $spacing-default 0;
+            border-top: $border-size-md dotted $light;
+            border-bottom: $border-size-md dotted $light;
         }
     }
 }
@@ -115,7 +109,6 @@
 }
 
 // nav-pills
-
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
@@ -134,13 +127,13 @@
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 1px;
-    padding: 20px 0;
-    font-size: 18px;
+    padding: $spacing-lg 0;
+    font-size: $font-size-md;
     transition: background 0.5s ease-out;
     background: none;
 
     @include mediaQ--max($bp-sm) {
-        padding: 10px;
+        padding: $spacing-sm;
     }
 }
 
@@ -157,7 +150,6 @@
 
 
 // navbar .affix 
-
 .navbar.affix {
     width: 100%;
     z-index: 2;

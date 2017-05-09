@@ -1,0 +1,37 @@
+#menu-content {
+
+    hr {
+        border-top: $border-size-lg solid $dark; 
+    }
+}
+
+.menu-category__title {
+    color: $primary-color;
+    font-weight: bold;
+}
+
+//# .row IN MENU CATEGORY PAGE
+.menu-sub-category {
+    margin-bottom: $spacing-triple;
+}
+
+.menu-sub-category__title {
+    color: $primary-color;
+}
+
+.menu-item__title {
+    display: inline-block;
+}
+
+.menu-item__icons {
+    display: inline-block;
+    margin-left: $spacing-xs;
+}
+
+.menu-item__content {
+    font-style: italic;
+}
+
+.menu-wrapper {
+    padding-bottom: $spacing-double;
+}

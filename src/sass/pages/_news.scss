@@ -6,17 +6,10 @@
 }
 
 .blog-post {
-    margin: 30px 0;
+    margin: $spacing-double 0;
     border: none;
     border-radius: 0;
-
 }
 
-.blog-hero-img {
-    @extend %background-img-cover;
-}
 
-.sidebar-right{
-    padding-top: 60px;
-}
 

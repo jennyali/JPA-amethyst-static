@@ -38,11 +38,6 @@ var $burgerMenuTopBar = $('.navbar-toggle .icon-bar-top');
 var $burgerMenuBottomBar =$('.navbar-toggle .icon-bar-bottom');
 var $burgerMenuMidBar = $('.navbar-toggle .icon-bar-mid');
 
-// EXCERPT GALLERY MODAL
-var $excerptGalleryModal = $('#excerpt-gallery-modal');
-var $excerptGalleryModalCancel = $('#excerpt-gallery-modal .icon-delete-1');
-var $excerptGalleryThumbnail = $('.gallery-excerpt__thumbnail');
-
 
 //------ TEMPLATES ---------//
 
@@ -65,19 +60,6 @@ $headerNavBtn.on({
     }
 });
 
-$excerptGalleryThumbnail.on({
-
-    'click' : function() {
-        excerptModalShowHandler();
-    }
-})
-
-$excerptGalleryModalCancel.on({
-
-    'click' : function() {
-        excerptModalCancelHandler();
-    }
-})
 
 /*===========================
 
@@ -104,15 +86,6 @@ function burgerMenuRotateBars(selector) {
     $burgerMenuMidBar.toggleClass('icon-bar-mid--fade');
 }
 
-function excerptModalShowHandler(selector) {
-
-    $excerptGalleryModal.addClass('gallery-show');
-}
-
-function excerptModalCancelHandler(selector) {
-
-    $excerptGalleryModal.removeClass('gallery-show');
-}
 
 //------- FUNCTION CALLS ----------//
 

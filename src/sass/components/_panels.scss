@@ -1,20 +1,21 @@
 
+//#     BS-overides
+
 .panel {
     border: none;
 }
 
 .panel-default > .panel-heading {
-    border-bottom: 2px solid $primary-color;
+    border-bottom: $border-size-md solid $primary-color;
 }
+//----------------------------------------
 
-//# panel-square // panel-square__inner 
+//#     panel-square // panel-square__inner 
 
 .panel-square {
     position: relative;
-    min-height: 50rem;
+    min-height: $panel-square-min-height;
 }
-
-
 
 .panel-square__inner {
     position: absolute;
@@ -27,9 +28,10 @@
     }
 }
 
+// postitioning for inner text box
 .panel-square__inner--text-center {
     width: 100%;
     max-width: 60rem;
-    padding: 60px;
+    padding: $spacing-triple;
     text-align: center;
 }

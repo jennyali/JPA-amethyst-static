@@ -4,17 +4,55 @@
 
 =============================*/
 
-// Background image default cover style
-
-%background-img-cover {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-
-// Text Shadow
+//# Text Shadow
 
 %text-shadow {
     text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.8);
+}
+
+//# Image with Title Carousel
+
+%img-title-carousel {
+    .item {
+       height: 300px;
+       overflow: hidden;
+
+        @include mediaQ--min($bp-sm){
+            height: 600px;
+        }
+    }
+
+    img {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    button {
+        margin-top: 30px;
+    }
+
+    .carousel-inner__text {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+    }
+
+    //# indicators
+    .carousel-indicators li {
+        width: 20px;
+        height: 20px;
+        margin: 5px;
+    }
+
+    .carousel-inner {
+    
+        &:hover {
+
+            .carousel-control {
+                opacity: 1;
+            }
+        }
+    }
 }

@@ -1,15 +1,32 @@
 
+
+// light-bg, slight see-through, $primary-color text form
 .form-custom-1 {
     max-width: 620px;
     margin: auto;
-    padding: 40px 30px 60px;
+    padding: ($spacing-lg * 2) $spacing-double $spacing-triple;
     background: rgba($light, 0.8);
 
-    @include mediaQ--min($bp-sm) {
-        padding: 10px 60px 90px;
-        
-        @include mediaQ--min($bp-md) {
-            padding: 40px 90px 90px;
+        input, textarea {
+            background: rgba($dark, 0.1);
+            border-radius: 0;
+            border: none;
+            border-bottom: 2px solid $primary-color;
+            box-shadow: none;
+            color: $primary-dark-color;
+        }
+
+        .form-control:focus,
+        .form-control:hover { 
+            border-color: $dark;
+            box-shadow: none;
+        }
+
+        @include mediaQ--min($bp-sm) {
+            padding: $spacing-sm $spacing-triple ($spacing-double * 3);
+            
+            @include mediaQ--min($bp-md) {
+                padding: ($spacing-lg * 2) ($spacing-double * 3) ($spacing-double * 3);
         }
     }
 }

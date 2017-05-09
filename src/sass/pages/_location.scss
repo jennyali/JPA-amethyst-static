@@ -1,21 +1,10 @@
 
 #location-hero-section {
-    @extend %background-img-cover;
     height: 400px;
 
     @include mediaQ--min($bp-sm) {
         height: 600px;
     }
-
-}
-
-.location-content__wrapper {
-    //display: flex;
-}
-
-.location-content__details {
-    position: relative;
-    min-height: 50rem;
 
 }
 
@@ -28,14 +17,6 @@
     }
 }
 
-.location-content__details__inner {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-}
-
 .location-content__details__title {
     @extend %text-shadow;
 }
@@ -44,9 +25,9 @@
     @extend %text-shadow;
 
     li {
-        font-size: 19px;
+        font-size: $font-size-md;
         line-height: 1.5;
         letter-spacing: 2px;
-        padding: 5px;
+        padding: $spacing-xs;
     }
 }

@@ -4,8 +4,8 @@
 #contact-details {
 
     span {
-        font-size: 50px;
-        margin-right: 30px;
+        font-size: $font-size-huge;
+        margin-right: $spacing-double;
     }
 
     h6 {
@@ -18,5 +18,5 @@
 }
 
 .contact-details__wrapper {
-    padding: 30px;
+    padding: $spacing-double;
 }

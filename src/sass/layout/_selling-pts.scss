@@ -2,10 +2,10 @@
 // Selling points section
 
 #selling-pts {
-    padding: 60px 0 120px;
+    padding: $spacing-triple 0 ($spacing-triple * 2);
 
         @include mediaQ--max($bp-sm) {
-            padding: 30px 0;
+            padding: $spacing-double 0;
         }
 }
 
@@ -29,12 +29,12 @@
     hr {
         width: 100%;
         margin: 0;
-        border-top: 2px solid $primary-dark-color;
+        border-top: $border-size-md solid $primary-dark-color;
     }
 }
 
 .line-break-wrapper {
-    margin-bottom: 60px;
+    margin-bottom: $spacing-triple;
 }
 
 .line-break-text {
@@ -52,17 +52,17 @@
             margin: 0;
             display: inline-block;
             background: $primary-color;
-            padding: 10px;
+            padding: $spacing-sm;
             max-width: 200px;
     }   
 }
 
 .selling-point {
     position: relative;
-    padding: 0 30px;
+    padding: 0 $spacing-double;
 
     @include mediaQ--max($bp-sm) {
-        margin: 60px 0;
+        margin: $spacing-triple 0;
     }
 
     .selling-point__img-outer-div {
@@ -71,7 +71,7 @@
         margin: auto;
         overflow: hidden;
         border-radius: 100%;
-        margin-bottom: 15px;
+        margin-bottom: $spacing-default;
         display: flex;
         justify-content: center;
 

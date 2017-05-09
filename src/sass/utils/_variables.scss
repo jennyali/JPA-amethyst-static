@@ -67,14 +67,13 @@ $font-size-xs:  map-get($map: $font-size, $key: xs);
 /* margin/padding sizing
 -----------------------*/
 // BS default = 15px
-// mp = margin/padding
 
-$mp-xs: 5px;
-$mp-sm: 10px;
-$mp-default: 15px;
-$mp-lg: 20px;
-$mp-double: 30px;
-$mp-triple: 60px;
+$spacing-xs: 5px;
+$spacing-sm: 10px;
+$spacing-default: 15px;
+$spacing-lg: 20px;
+$spacing-double: 30px;
+$spacing-triple: 60px;
 
 /* breakpoints
 -----------------------*/
@@ -97,3 +96,13 @@ $bp-lg: map-get($map: $breakpoints, $key: lg);
             ELEMENT VARIABLES
 
 ==============================================*/
+
+$vertical-navbar-width: 240px;
+
+$panel-square-min-height: 50rem;
+
+$quote-icon-padding: 25px 28px 15px;
+
+$border-size-lg: 3px;
+$border-size-md: 2px;
+$border-size-sm: 1px;

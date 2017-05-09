@@ -6,10 +6,6 @@
     }
 }
 
-#contact-section {
-    @extend %background-img-cover;
-}
-
 .contact-section__form {
     background: rgba($dark, 0.5);
 }
@@ -18,6 +14,6 @@
     padding: 0;
 
     @include mediaQ--min($bp-sm) {
-        padding: 60px 30px 120px;
+        padding: $spacing-triple $spacing-double ($spacing-triple * 2);
     }
 }
