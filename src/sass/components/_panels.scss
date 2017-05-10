@@ -1,6 +1,10 @@
 
 //#     BS-overides
 
+.panel-default > .panel-heading {
+    background: none;
+}
+
 .panel {
     border: none;
 }

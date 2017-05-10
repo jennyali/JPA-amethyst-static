@@ -5913,7 +5913,8 @@ a {
   color: #6C2487; }
 
 .well {
-  border: none; }
+  border: none;
+  background: none; }
 
 .primary-color {
   color: #6C2487; }
@@ -6337,6 +6338,9 @@ a {
   @media (min-width: 767px) and (min-width: 992px) {
     .form-custom-1 {
       padding: 40px 90px 90px; } }
+
+.panel-default > .panel-heading {
+  background: none; }
 
 .panel {
   border: none; }
